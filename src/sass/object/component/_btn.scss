@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.btn  {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  text-align: center;
+  background-color: $green;
+  color: $white;
+  width: rem(202);
+  padding: rem(17.6) rem(40);
+  position: relative;
+  line-height: calc(22/14);
+  font-family: $english-family;
+}
+
+.btn__img {
+  width: rem(40);
+  height: rem(6);
+}
+
+.btn::after  {
+  content: "";
+  border: 1px solid $green;
+  height: calc(100% - 1px);
+    left: 0.2rem;
+    position: absolute;
+    top: 0.3rem;
+    width: calc(100% + 1px);
+}
