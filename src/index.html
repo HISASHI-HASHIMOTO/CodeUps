@@ -33,7 +33,43 @@
     <script defer src="./assets/js/jquery.inview.min.js"></script>
   </head>
   <body>
-    <header></header>
+    <header class="l-header p-header">
+      <div class="p-header__inner">
+        <h1 class="c-logo">
+          <a href="logo__link" class="c-logo__item">
+            <img src="./images/logo_codeups.svg" alt="ヘッダーロゴ" />
+          </a>
+        </h1>
+        <button class="p-header__drawer c-hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- ul.global-nav__items>li.global-nav__item*5>a -->
+        <nav class="header__sp-nav sp-nav js-drawer-menu">
+          <ul class="sp-nav__items">
+            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">お知らせ</a></il>
+            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">事業内容</a></il>
+            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">制作実績</a></il>
+            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">企業内容</a></il>
+            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">ブログ</a></il>
+            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">お問合わせ</a></il>
+          </ul>
+        </nav>
+        <nav class="header__pc-nav pc-nav js-drawer-menu">
+          <ul class="pc-nav__items">
+            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">お知らせ</a></il>
+            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">事業内容</a></il>
+            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">制作実績</a></il>
+            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">企業内容</a></il>
+            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">ブログ</a></il>
+            <il class="pc-nav__item pc-nav__item--white"><a href="" class="pc-nav__item-link">お問合わせ</a></il>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
     <main>
       <div class="inner">
         <div class="section-header">
