@@ -1,4 +1,4 @@
-alert('test');
+
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
   //要素の取得とスピードの設定
