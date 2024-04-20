@@ -1,1 +1,58 @@
 @use "global" as *;
+
+
+.card2 {
+  display: block;
+  box-shadow: 2px 4px 9px -5px rgba(0, 0, 0, 1);
+  padding: rem(16);
+}
+
+.card2__img {
+  width: 100%;
+}
+
+.card2__img img {
+  width: 100%;
+  aspect-ratio: 301/201;
+  object-fit: cover;
+}
+
+.card2__body {
+  width: 100%;
+  margin-top: rem(16);
+}
+
+.card2__metabox {
+  border-bottom: 1px solid $green;
+  padding-bottom: rem(4);
+}
+
+.card2__date {
+  font-size: rem(12);
+  font-family: $english-family;
+  line-height: calc(18/12);
+}
+
+.card2__title {
+  font-size: rem(16);
+  line-height: calc(24/16);
+}
+
+.card2__title {
+  margin-top: rem(4);
+  line-height: calc(24/16);
+  color: $black2;
+  font-weight: bold;
+}
+
+.card2__box {
+  margin-top: rem(24);
+  max-width: rem(272);
+  margin-inline: auto;
+}
+
+.card2__text {
+  margin-top: rem(16);
+  line-height: calc(24/16);
+}
+

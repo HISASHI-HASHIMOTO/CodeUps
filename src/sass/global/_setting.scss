@@ -17,7 +17,6 @@ $base-font-family: "Noto Sans JP", sans-serif;
 $english-family: "Gotu", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
-
 body {
   font-family: $base-font-family;
 }
@@ -26,18 +25,17 @@ body {
 $regular: 300;
 $normal: 400;
 $bold: 700;
-
+ 
 ////////////////////
 // 色の指定
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
-$white: #fff;
-$green: #408F95;
-$brown: #796A64;
-$gray-color-elements: #DDF0F1; 
-$font-color: #0D2936;
-$accent-color: #408F95;
-$red: #C94800;
-$gray: #D9D9D9;
+$black: #000000;
+$black2: #0D2936;
+$white: #ffffff;
+$white2: #ddf0f1;
+$green: #408f95;
+$brown: #796a64;
+$red: #c94800;
+$gray: #d9d9d9;
