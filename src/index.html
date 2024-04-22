@@ -33,45 +33,146 @@
     <script defer src="./assets/js/jquery.inview.min.js"></script>
   </head>
   <body>
-    <header class="l-header p-header">
-      <div class="p-header__inner">
-        <h1 class="c-logo">
-          <a href="logo__link" class="c-logo__item">
-            <img src="./images/logo_codeups.svg" alt="ヘッダーロゴ" />
+    <header class="header layout-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="logo__link" class="header__logo-item">
+            <img
+              src="./assets/images/common/CodeUps.svg"
+              alt="ヘッダーロゴ"
+            />
           </a>
         </h1>
-        <button class="p-header__drawer c-hamburger js-hamburger">
+
+        <!-- ハンバーガーメニュー -->
+        <button class="header__hamburger hamburger js-hamburger">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <!-- ul.global-nav__items>li.global-nav__item*5>a -->
-        <nav class="header__sp-nav sp-nav js-drawer-menu">
-          <ul class="sp-nav__items">
-            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">お知らせ</a></il>
-            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">事業内容</a></il>
-            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">制作実績</a></il>
-            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">企業内容</a></il>
-            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">ブログ</a></il>
-            <il class="sp-nav__item"><a href="" class="sp-nav__item-link">お問合わせ</a></il>
-          </ul>
+        <!-- ドロワーメニュー -->
+        <nav class="header__drawer-menu drawer-menu js-drawer-menu u-mobile">
+          <div class="drawer-menu__inner">
+            <div class="drawer-menu__column-list">
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link">キャンペーン</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">ライセンス取得</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link"
+                    >貸切体験ダイビング</a
+                  >
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">ナイトダイビング</a>
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link"
+                    >私たちについて</a
+                  >
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link"
+                    >ダイビング情報</a
+                  >
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">ライセンス情報</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">体験ダイビング</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">ファンダイビング</a>
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link">ブログ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="drawer-menu__column-list">
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link">お客様の声</a>
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link">料金一覧</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">ライセンス講習</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">体験ダイビング</a>
+                </li>
+                <li class="drawer-menu__item">
+                  <a href="" class="drawer-menu__item-link">ファンダイビング</a>
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link">よくある質問</a>
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link"
+                    >プライバシー<br>ポリシー</a
+                  >
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link">利用規約</a>
+                </li>
+              </ul>
+              <ul class="drawer-menu__list-items">
+                <li class="drawer-menu__heading-item">
+                  <a href="" class="drawer-menu__heading-link">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <nav class="header__pc-nav pc-nav js-drawer-menu">
+
+        <nav class="header__pc-nav pc-nav u-decktop">
           <ul class="pc-nav__items">
-            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">お知らせ</a></il>
-            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">事業内容</a></il>
-            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">制作実績</a></il>
-            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">企業内容</a></il>
-            <il class="pc-nav__item"><a href="" class="pc-nav__item-link">ブログ</a></il>
-            <il class="pc-nav__item pc-nav__item--white"><a href="" class="pc-nav__item-link">お問合わせ</a></il>
+            <il class="pc-nav__item"
+              ><a href="" class="pc-nav__item-link">お知らせ</a></il
+            >
+            <il class="pc-nav__item"
+              ><a href="" class="pc-nav__item-link">事業内容</a></il
+            >
+            <il class="pc-nav__item"
+              ><a href="" class="pc-nav__item-link">制作実績</a></il
+            >
+            <il class="pc-nav__item"
+              ><a href="" class="pc-nav__item-link">企業内容</a></il
+            >
+            <il class="pc-nav__item"
+              ><a href="" class="pc-nav__item-link">ブログ</a></il
+            >
+            <il class="pc-nav__item pc-nav__item--white"
+              ><a href="" class="pc-nav__item-link">お問合わせ</a></il
+            >
           </ul>
         </nav>
       </div>
     </header>
-    
+
     <main>
-      <div class="inner">
+      <div class="inner" style="margin-top: 300px">
         <div class="section-header">
           <h2 class="section-header__title">Campaign</h2>
           <p class="section-header__subtitle">キャンペーン</p>

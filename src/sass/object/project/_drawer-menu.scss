@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.drawer-menu {
+  background-color: $green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 8000;
+  transition: 0.3s;
+  @include mq(md) {
+   display: none;
+  }
+}
+
+.drawer-menu__inner {
+  padding: rem(94) rem(15) rem(111);
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+.drawer-menu__column-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+}
+
+.drawer-menu__item-block {
+
+}
+
+.drawer-menu__list-items:not(:first-of-type) {
+  margin-top: rem(16);
+}
+
+.drawer-menu__heading-link {
+  display: block;
+  font-weight: $bold;
+  color: $white;
+  font-size: rem(16);
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  line-height: calc(18/16);
+  text-align: left;
+  position: relative;
+  width: 100%;
+  padding-left: rem(22);
+}
+
+.drawer-menu__heading-link::before {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/images/common/hitode.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: rem(16);
+  height: rem(18);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.drawer-menu__item {
+
+}
+
+.drawer-menu__item-link {
+  display: block;
+  width: 100%;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  padding-left: rem(22);
+  color: $white;
+  text-align: left;
+  font-size: rem(16);
+  line-height: calc(18/16);
+}
+
+.drawer-menu__item-link--header {
+
+}

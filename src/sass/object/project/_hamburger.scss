@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.hamburger{
+  z-index:9999;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  right: rem(5);
+  width: rem(32);
+  height: rem(24);
+  @include mq(md) {
+   display: none;
+  }
+ }
+
+.hamburger span {
+  position: absolute;
+  display: block;
+  width: inherit;
+  height: rem(1);
+  background: $white;
+  transition: ease .3s;
+  border-radius: 50%;
+ }
+ 
+ .hamburger span:nth-child(1) {
+  top: 0;
+ }
+ 
+ .hamburger span:nth-child(2) {
+  top: rem(11);
+ }
+ 
+ .hamburger span:nth-child(3) {
+  top: rem(24);
+ }
+ /*is-open時の動き*/
+ .hamburger.is-open span:nth-child(1) {
+  top: rem(13);
+  transform: rotate(35deg);
+ }
+ 
+ .hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+ }
+ 
+ .hamburger.is-open span:nth-child(3) {
+  top: rem(13);
+  transform: rotate(-35deg);
+ }
+ 
