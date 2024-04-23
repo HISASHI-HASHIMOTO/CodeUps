@@ -29,10 +29,6 @@
   width: 50%;
 }
 
-.drawer-menu__item-block {
-
-}
-
 .drawer-menu__list-items:not(:first-of-type) {
   margin-top: rem(16);
 }
@@ -65,10 +61,6 @@
   left: 0;
 }
 
-.drawer-menu__item {
-
-}
-
 .drawer-menu__item-link {
   display: block;
   width: 100%;
@@ -79,8 +71,4 @@
   text-align: left;
   font-size: rem(16);
   line-height: calc(18/16);
-}
-
-.drawer-menu__item-link--header {
-
 }

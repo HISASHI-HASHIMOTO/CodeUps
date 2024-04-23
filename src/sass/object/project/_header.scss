@@ -16,17 +16,17 @@
   height: inherit;
   padding: 0 rem(15) 0 rem(13);
   @include mq(md) {
-    padding: 0 rem(40);
+    padding: 0 rem(21)  0 rem(35);
   }
 }
 
 .header__logo {
-   width: rem(107);
+   width: rem(139);
    height: inherit;
    padding-top: rem(22);
    z-index: 9999;
    @include mq(md) {
-    width: rem(133);
+    width: rem(141);
   }
 }
 
