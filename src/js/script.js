@@ -38,5 +38,16 @@ color.on('inview', function(){
     }
   });
 
+// スワイパー
+  const slide1 = new Swiper(".swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    allowTouchMove: false,
+      autoplay: {
+      delay: 3000,
+    },
+  });
+
 
 });

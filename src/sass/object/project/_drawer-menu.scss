@@ -9,8 +9,8 @@
   width: 100%;
   height: 100vh;
   z-index: 8000;
+  display: none;
   @include mq(md) {
-   display: none;
   }
 }
 
