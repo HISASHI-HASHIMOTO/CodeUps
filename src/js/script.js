@@ -39,7 +39,7 @@ color.on('inview', function(){
   });
 
 // スワイパー
-  const slide1 = new Swiper(".swiper", {
+  const slide1 = new Swiper("#slide1", {
     loop: true,
     effect: "fade",
     speed: 3000,
@@ -47,6 +47,22 @@ color.on('inview', function(){
       autoplay: {
       delay: 3000,
     },
+  });
+
+  const slide2 = new Swiper("#slide2", {
+    slidesPerView: 1,
+    breakpoints:{
+     // 画面幅が600px以上の場合は3枚
+          768:{
+            slidesPerView: 3,
+          }
+        },
+        // ナビボタンが必要なら追加
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    spaceBetween: 40,
   });
 
 

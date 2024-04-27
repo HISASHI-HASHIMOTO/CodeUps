@@ -11,12 +11,18 @@
 
 .card__img img {
   width: 100%;
-  aspect-ratio: 333/223;
+  aspect-ratio: 280/188;
   object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 333/223;
+  }
 }
 
 .card__body {
-  padding: rem(24) rem(16) rem(40) rem(16);
+  padding: rem(16) rem(16) rem(24) rem(16);
+  @include mq(md) {
+    padding: rem(24) rem(16) rem(40) rem(16);
+  }
 }
 
 .card__metabox {
@@ -26,10 +32,13 @@
 
 .card__meta {
   font-size: rem(12);
-  padding:  rem(6) rem(16);
+  padding:  rem(4) rem(12);
   border: 1px solid $green;
   color: $green;
   display: inline-block;
+  @include mq(md) {
+    padding:  rem(6) rem(16);
+  }
 }
 
 .card__title {
@@ -46,21 +55,31 @@
 .card__menu {
   text-align: center;
   line-height: calc(24/16);
-  margin-left: rem(-17.6);
+  @include mq(md) {
+    margin-left: rem(-17.6);
+  }
 }
 
 .card__price {
   margin-top: rem(8);
   display: flex;
-  justify-content: space-between;
+  gap: rem(16);
   align-items: flex-end;
+  justify-content: center;
+  @include mq(md) {
+    gap: rem(24);
+  }
 }
 
 .card__original-price {
-  font-size: rem(24);
+  font-size: rem(20);
   line-height: 1;
   font-weight: bold;
   position: relative;
+
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }
 
 .card__original-price::after {
@@ -75,8 +94,11 @@
 }
 
 .card__discounted-rate {
-  font-size: rem(40);
+  font-size: rem(32);
   line-height: 1;
   color: $green;
   font-weight: bold;
+  @include mq(md) {
+   font-size: rem(40);
+  }
 }
