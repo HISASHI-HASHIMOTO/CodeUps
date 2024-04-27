@@ -59,8 +59,8 @@ color.on('inview', function(){
         },
         // ナビボタンが必要なら追加
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".campaign__button-next",
+          prevEl: ".campaign__button-prev",
         },
     spaceBetween: 40,
   });
