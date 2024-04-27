@@ -29,9 +29,10 @@ padding-left: rem(15);
 }
 
 .campaign__swiper .swiper-button-prev,
-.campaign__swiper .swiper-button-prev {
+.campaign__swiper .swiper-button-next {
   display: none;
   @include mq(md) {
+    overflow:initial;
     display: block;
     width: rem(80);
     height: rem(80);
@@ -40,7 +41,6 @@ padding-left: rem(15);
 
 .campaign__swiper .swiper-button-prev {
   @include mq(md) {
-    left: var(--swiper-navigation-sides-offset, 10px);
     right: auto;
     top: 0;
   }
@@ -48,26 +48,28 @@ padding-left: rem(15);
 
 .campaign__swiper .swiper-button-next {
   @include mq(md) {
-    display: block;
     left: auto;
     top: 0;
   }
 }
 
-.campaign__swiper .swiper-button-next::before,
-.campaign__swiper .swiper-button-next::after {
+.campaign__swiper .swiper-button-prev::before,
+.campaign__swiper .swiper-button-next::before {
   content: "";
   display: inline-block;
-  background-image: url(/assets/images/common/Group18.svg);
-  width: rem(80);
-  height: rem(80);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.campaign__swiper .swiper-button-next {
-  display: none;
-  @include mq(md) {
 
-  }
+.campaign__swiper .swiper-button-prev:before {
+  background-image: url(/assets/images/common/Group18.svg);
+}
+
+.campaign__swiper .swiper-button-next:before {
+  background-image: url(/assets/images/common/Group19.svg);
 }
 
 .campaign__btn {
