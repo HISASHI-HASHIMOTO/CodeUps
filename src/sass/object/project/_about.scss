@@ -1,0 +1,141 @@
+@use "global" as *;
+
+.about__inner {
+  @include mq(md) {
+  //  position: relative;
+  }
+}
+
+.about__contents {
+  @include mq(md) {
+    margin-top: rem(40);
+    padding-top: rem(42);
+    // background-image: url(/assets/images/common/ocean1a.jpg);
+    // background-size: calc(400/1080 * 100%);
+    // background-repeat: no-repeat;
+  }
+}
+
+.about__img-box {
+  margin-top: rem(24);
+  position: relative;
+  @include mq(md) {
+   display: none;
+  }
+}
+
+.about__img-left {
+  width: 100%;
+  max-width: calc(128/345 * 100%);
+  z-index: 10;
+  position: absolute;
+}
+
+.about__img-left img {
+  aspect-ratio: 128/194;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__img-right {
+  width: 100%;
+  max-width: calc(281/345 * 100%);
+  margin-left: auto;
+  padding-top: calc(26/212 * 100%);
+}
+
+.about__img-right img {
+  aspect-ratio: 281/186;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__content {
+  margin-top: rem(40);
+  @include mq(md) {
+   margin-left: calc(200/1080 *100%);
+   padding-top: rem(120);
+   padding-bottom: rem(220);
+   background-image: url(/assets/images/common/ocean2.jpg);
+   background-size: cover;
+   display: flex;
+   justify-content: flex-start;
+   gap: rem(40);
+   position: relative;
+  }
+}
+
+.about__content::before {
+  @include mq(md) {
+  content: "";
+  position: absolute;
+  display: inline-block;
+   width:  rem(400);
+   height: rem(606);
+   top: rem(-80);
+   left: rem(-200);
+    background-image: url(/assets/images/common/ocean1a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
+.about__content::after {
+  @include mq(md) {
+  content: "";
+  position: absolute;
+  display: inline-block;
+   width:  rem(194);
+   height: rem(181);
+   bottom: rem(-90);
+   right: rem(-97);
+    background-image: url(/assets/images/common/sango_isogintyaku.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
+
+.about__sub-title {
+  font-family: $english-family;
+  font-size: rem(40);
+  color: $green;
+  font-weight: normal;
+  line-height: 1;
+  @include mq(md) {
+   width: calc( 400/880 * 100%);
+   color: $white;
+   font-size: rem(80);
+   line-height: calc(100/80);
+   letter-spacing: 0;
+   z-index: 1000;
+  }
+}
+
+.about__sub-title::first-letter {
+  text-transform: uppercase;
+}
+
+.about__sub-title-decoration {
+  text-transform: capitalize;
+} 
+
+.about__text-box {
+  margin-top: rem(16);
+  font-size: rem(16);
+  line-height: calc(24/16);
+  @include mq(md) {
+    width: calc( 400/880 * 100%);
+    color: $white;
+    line-height: calc(24/16);
+    margin-top: 0;
+  }
+}
+
+.about__btn {
+  margin-top: rem(27);
+  text-align: center;
+  @include mq(md) {
+   margin-top: rem(37);
+  }
+}

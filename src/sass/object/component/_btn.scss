@@ -25,6 +25,10 @@
   z-index: -100;
 }
 
+.btn__text::first-letter {
+  text-transform: uppercase;
+}
+
 .btn__arrow {
   border-bottom: 1px solid $white;
   border-right: 1px solid $white;
