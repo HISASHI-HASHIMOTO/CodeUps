@@ -1,0 +1,62 @@
+@use "global" as *;
+
+
+.voice__inner {
+  position: relative;
+}
+
+.voice__inner::before {
+  content: none;
+  display: none;
+  @include mq(md) {   
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url(/assets/images/common/kinngyonadadai_green.png);
+    background-size: rem(301) rem(138);
+    background-repeat: no-repeat;
+    top: -20%;
+    left: -5%;
+    width: rem(301);
+    height: rem(138);
+  }
+}
+
+.voice__inner::after {
+  content: none;
+  display: none;
+  @include mq(md) {   
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url(/assets/images/common/ibaratatsu.png);
+    background-size: rem(71) rem(162);
+    background-repeat: no-repeat;
+    bottom: -10%;
+    right: 2%;
+    width: rem(71);
+    height: rem(162);
+  }
+}
+
+.voice__cards  {
+  margin-top: rem(40);
+  @include mq(md) {
+   margin-top: rem(30);
+  }
+}
+.voice__cards .cards2__item {
+  max-width: rem(500);
+  margin-inline: auto;
+  @include mq(md) {
+   
+  }
+}
+
+.voice__btn {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

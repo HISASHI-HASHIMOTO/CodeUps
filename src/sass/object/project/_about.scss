@@ -2,7 +2,6 @@
 
 .about__inner {
   @include mq(md) {
-  //  position: relative;
   }
 }
 
@@ -10,9 +9,6 @@
   @include mq(md) {
     margin-top: rem(40);
     padding-top: rem(42);
-    // background-image: url(/assets/images/common/ocean1a.jpg);
-    // background-size: calc(400/1080 * 100%);
-    // background-repeat: no-repeat;
   }
 }
 

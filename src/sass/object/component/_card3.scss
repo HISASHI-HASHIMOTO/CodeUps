@@ -4,7 +4,7 @@
 .card3 {
   display: block;
   box-shadow: 2px 4px 9px -5px rgba(0, 0, 0, 1);
-  padding: rem(24) rem(16);
+  padding: rem(21) rem(16) rem(22);
   @include mq(md) {
     padding: rem(24);
   }
@@ -55,10 +55,8 @@
   border: 1px solid $green;
   color: $green;
   display: inline-block;
-  width: rem(110);
   @include mq(md) {
     padding: rem(6.4) rem(15);
-    width: rem(116);
   }
 }
 
@@ -71,26 +69,6 @@
     font-size: rem(24);
     line-height: calc(34.75/24);
   }
-}
-
-.colorbox{
-  position: relative;
-  width: 100%;
-}
-
-.colorbox .color{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: $green;
-}
-
-.colorbox img{
-  display: block;
-  width: 100%;
 }
 
 .card3__img {

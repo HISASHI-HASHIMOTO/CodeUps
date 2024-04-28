@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.blog {
+  padding-top: rem(80);
+  @include mq(md) {
+    padding-top: rem(100);
+    background-image: url(/assets/images/common/Rectangle7.jpg);
+    background-size: 100% rem(500);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+}
+.blog__inner::after {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url(/assets/images/common/kinngyonahadai-white.png);
+    background-size: rem(437) rem(201);
+    background-repeat: no-repeat;
+    top: 3%;
+    left: 7%;
+    width: rem(437);
+    height: rem(207);
+  }
+}
+
+.blog__inner {
+  padding-inline: rem(21);
+  width: 100%;
+  @include mq(md) {
+   max-width: rem(1080);
+   width: 100%;
+   margin-inline: auto;
+  }
+}
+
+.blog__title {
+  @include mq(md) {
+
+  }
+}
+
+.blog__contents {
+  margin-top: rem(24);
+  @include mq(md) {
+   margin-top: rem(80);
+  }
+}
+.blog__cards .cards__item {
+  max-width: rem(500);
+  margin-inline: auto;
+  @include mq(md) {
+   
+  }
+}
+
+.blog__btn {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+   margin-top: rem(80);
+  }
+}

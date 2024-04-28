@@ -4,7 +4,8 @@
 .card2 {
   display: block;
   box-shadow: 2px 4px 9px -5px rgba(0, 0, 0, 1);
-  padding: rem(16) rem(16) rem(24);
+  padding: rem(21) rem(16) rem(24);
+  background-color: $white;
 }
 
 .card2__img {
@@ -39,7 +40,6 @@
 }
 
 .card2__title {
-  margin-top: rem(4);
   line-height: calc(24/16);
   color: $black2;
   font-weight: bold;

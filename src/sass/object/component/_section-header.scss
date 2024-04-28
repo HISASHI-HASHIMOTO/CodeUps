@@ -6,10 +6,10 @@
 
 .section-header__title {
   font-size: rem(32);
-  line-height: calc(40/32);
   line-height: 1;
   text-transform: capitalize;
   font-family: $english-family;
+  font-weight: normal;
   @include mq(md) {
     font-size: rem(40);
   }
@@ -27,5 +27,13 @@
   @include mq(md) { 
     font-size: rem(12);
     line-height: calc(18/12);
+  }
+}
+
+.section-header__title.section-header__title--color2,
+.section-header__title.section-header__title--color2::first-letter,
+.section-header__subtitle.section-header__title--color2 {
+  @include mq(md) {
+    color: $white;
   }
 }
