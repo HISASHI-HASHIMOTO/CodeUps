@@ -1,0 +1,178 @@
+@use "global" as *;
+
+.contact {
+
+}
+
+
+
+.contact__inner {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  max-width: calc(276/345 * 100%);
+  width: 100%;
+  margin-inline: auto;
+  position: relative;
+  @include mq(md) {
+    filter: none;
+    max-width: rem(1080);
+    width: 100%;
+  }
+}
+
+.contact__inner::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url(/assets/images/common/kingyohanadai-green2.png);
+  background-size: rem(109) rem(50);
+  background-repeat: no-repeat;
+  top: -4%;
+  right: -7%;
+  width: rem(109);
+  height: rem(50); 
+  @include mq(md) {  
+    background-size: rem(312) rem(144);
+    right: -12.6%;
+    top: -9.5%;
+    width: rem(312);
+    height: rem(138); 
+  }
+}
+
+.contact__contents  {
+
+  @include mq(md) {
+   max-width: rem(1080);
+   width: 100%;
+   display: flex;
+   padding: rem(80) rem(50);
+   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+.contact__address-box {
+  @include mq(md) {
+    max-width: rem(522);
+    width: 100%;
+    padding-right: rem(82);
+    border-right: 1px solid $green;
+  }
+}
+
+.contact__address-title {
+  margin-inline: auto;
+  padding-bottom: rem(6);
+  border-bottom: 1px solid $green;
+}
+
+.contact__address-title img {
+  text-align: center;
+  max-width: rem(174);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+    max-width: rem(200);
+    width: 100%;
+  }
+}
+
+.contact__address-body {
+  margin-top: rem(16);
+  text-align: center;
+  @include mq(md) {
+   display: flex;
+   gap: rem(21);
+   margin-top: rem(24);
+  } 
+}
+
+.contact__address-text-box {
+  @include mq(md) {
+    max-width: rem(146);
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.contact__address-text {
+  font-size: rem(16);
+  line-height: calc(24/16);
+
+}
+
+.contact__address-text:not(:first-of-type) {
+  margin-top: rem(4);
+}
+
+.contact__address-telephone {
+  @include mq(md) {   
+    pointer-events: none;
+  }
+}
+
+.contact__address-map {
+  margin-top: rem(16);
+  max-width: 100%;
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+   margin-top: 0;
+  }
+}
+
+.contact__address-map img {
+  aspect-ratio: 363 / 200;
+  margin-inline: auto;
+  max-width: 97%;
+  object-fit: cover;
+  width: 100%;
+  @include mq(md) {
+    aspect-ratio: 363 / 200;
+    margin-inline: auto;
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.contact__title {
+  margin-top: rem(40);
+}
+
+.contact__contact-box {
+  max-width: rem(315);
+  margin-inline: auto;
+  @include mq(md) {
+
+  }
+}
+
+.contact__contact-title {
+  font-size: rem(80);
+  line-height: 1;
+  margin-left: rem(-6);
+  @include mq(md) {
+    font-size: rem(80);
+    margin-left: rem(11);
+    margin-top: rem(-19);
+  }
+}
+
+.contact__contact-subtitle {
+  letter-spacing: 0.18em;
+  @include mq(md) {
+    letter-spacing: 0.3em;
+    margin-left: rem(11);
+  }
+}
+
+.contact__contact-subtitle:first-of-type {
+  margin-top: rem(-8);
+}
+
+.contact__btn {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-left: rem(11);
+  }
+}

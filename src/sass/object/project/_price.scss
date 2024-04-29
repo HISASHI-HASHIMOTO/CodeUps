@@ -1,0 +1,133 @@
+@use "global" as *;
+
+.price {
+  background-color: $green3;
+  padding-top: rem(83);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
+}
+
+.price__inner {
+  @include mq(md) {
+   position: relative;
+  }
+}
+
+.price__inner::after {
+  content: none;
+  display: none;
+  @include mq(md) {   
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url(/assets/images/common/kingyohanadai-green2.png);
+    background-size: rem(443) rem(212);
+    background-repeat: no-repeat;
+    bottom: -4%;
+    left: -5%;
+    width: rem(437);
+    height: rem(201);
+  }
+}
+
+.price__contents {
+  max-width: rem(500);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: rem(1080);
+   gap: rem(93);
+  }
+}
+
+.price__img {
+  margin-top: rem(27);
+  max-width: rem(500);
+  width: 100%;
+  @include mq(md) {
+    max-width: calc(746/1080 * 100%);
+    width: 100%;
+    margin-top: rem(40);
+  }
+}
+
+.price__img img {
+  max-width: rem(500);
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 345/227;
+  @include mq(md) {
+   aspect-ratio: 498/750;
+   max-width: 100%;
+   width: 100%;
+   object-fit: cover;
+  }
+}
+
+.price__list-contents {
+  max-width: rem(500);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+    max-width:  calc(492/1080 * 100%);
+    width: 100%;
+  }
+}
+
+.price__list-content {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(38);
+  }
+} 
+
+
+.price__list-title {
+  font-size: rem(16);
+  line-height: calc(24/16);
+  padding-bottom: rem(4);
+  border-bottom: 1px solid $green;
+}
+
+.price__list-body {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.price__list-head {
+  margin-top: rem(8);
+  width: 80%;
+  font-size: rem(14);
+  line-height: calc(24/14);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(24/16);
+  }
+}
+
+.price__list-price {
+  text-align: right;
+  margin-top: rem(8);
+  width: 20%;
+  font-size: rem(14);
+  line-height: calc(24/14);
+  margin-left: auto;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(24/16);
+  }
+}
+
+.price__btn {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
