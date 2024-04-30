@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .blog {
-  padding-top: rem(80);
+  padding-top: rem(86);
   @include mq(md) {
     padding-top: rem(100);
     background-image: url(/assets/images/common/Rectangle7.jpg);
@@ -42,7 +42,7 @@
 }
 
 .blog__contents {
-  margin-top: rem(24);
+  margin-top: rem(23);
   @include mq(md) {
    margin-top: rem(80);
   }
@@ -58,7 +58,8 @@
 
 .blog__btn {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(41);
+  margin-left: rem(-2);
   @include mq(md) {
    margin-top: rem(80);
   }

@@ -6,8 +6,8 @@
 
 .campaign__title {
   width: 100%;
-  z-index: -1;
   display: inline-block;
+  margin-left: rem(-8);
 }
 
 .campaign__content {
@@ -101,8 +101,10 @@
 
 .campaign__btn {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(31.52);
+  margin-left: rem(-17.6);
   @include mq(md) {
    margin-top: rem(70);
+   margin-left: 0;
   }
 }

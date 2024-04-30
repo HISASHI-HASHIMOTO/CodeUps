@@ -2,7 +2,7 @@
 
 .information {
   background-color: $green3;
-  padding-top: rem(80);
+  padding-top: rem(85);
   padding-bottom: rem(80);
   @include mq(md) {
     padding-top: rem(100);
@@ -68,4 +68,8 @@
 .information__btn {
   margin-top: rem(40);
   text-align: center;
+  margin-left: rem(-3.2);
+  @include mq(md) {
+   margin-left: 0;
+  };
 }

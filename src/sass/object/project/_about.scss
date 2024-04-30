@@ -13,7 +13,7 @@
 }
 
 .about__img-box {
-  margin-top: rem(24);
+  margin-top: rem(28);
   position: relative;
   @include mq(md) {
    display: none;
@@ -37,7 +37,7 @@
   width: 100%;
   max-width: calc(281/345 * 100%);
   margin-left: auto;
-  padding-top: calc(26/212 * 100%);
+  padding-top: calc(17/212 * 100%);
 }
 
 .about__img-right img {
@@ -129,9 +129,11 @@
 }
 
 .about__btn {
-  margin-top: rem(27);
+  margin-top: rem(26);
   text-align: center;
+  margin-left: rem(-17.6);
   @include mq(md) {
    margin-top: rem(37);
+   margin-left: 0;
   }
 }

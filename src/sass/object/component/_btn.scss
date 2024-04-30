@@ -25,6 +25,10 @@
   z-index: -100;
 }
 
+.btn__text {
+  font-size: rem(14);
+}
+
 .btn__text::first-letter {
   text-transform: uppercase;
 }
