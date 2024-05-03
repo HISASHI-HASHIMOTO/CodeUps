@@ -72,7 +72,8 @@
   align-items: flex-end;
   justify-content: center;
   @include mq(md) {
-    gap: rem(24);
+    gap: rem(21);
+    margin-left: rem(3.2);
   }
 }
 

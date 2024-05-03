@@ -15,8 +15,8 @@
     background-image: url(/assets/images/common/kinngyonadadai_green.png);
     background-size: rem(301) rem(138);
     background-repeat: no-repeat;
-    top: -20%;
-    left: -5%;
+    top: -19.6%;
+    left: -4.9%;
     width: rem(301);
     height: rem(138);
   }
@@ -32,7 +32,7 @@
     background-image: url(/assets/images/common/ibaratatsu.png);
     background-size: rem(71) rem(162);
     background-repeat: no-repeat;
-    bottom: -10%;
+    bottom: -11%;
     right: 2%;
     width: rem(71);
     height: rem(162);
@@ -42,19 +42,19 @@
 .voice__cards  {
   margin-top: rem(40);
   @include mq(md) {
-   margin-top: rem(30);
+   margin-top: rem(20.8);
   }
 }
 .voice__cards .cards2__item {
   max-width: rem(500);
   margin-inline: auto;
   @include mq(md) {
-   
+   min-width: rem(520);
   }
 }
 
 .voice__btn {
-  margin-top: rem(40);
+  margin-top: rem(42);
   text-align: center;
   @include mq(md) {
     margin-top: rem(80);

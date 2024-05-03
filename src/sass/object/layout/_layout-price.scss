@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .layout-price {
-  margin-top: rem(80);
+  margin-top: rem(81.6);
   @include mq(md) {
    margin-top: rem(140);
   }

@@ -6,13 +6,16 @@
   box-shadow: 2px 4px 9px -5px rgba(0, 0, 0, 1);
   padding: rem(21) rem(16) rem(22);
   @include mq(md) {
-    padding: rem(24);
+    padding: rem(32) rem(24) rem(24);
   }
 }
 
 .card3__body {
   display: flex;
-  gap: rem(16);
+  gap: rem(13);
+  @include mq(md) {
+   gap:rem(16)
+  }
 }
 
 
@@ -54,7 +57,7 @@
   border: 1px solid $green;
   color: $green;
   display: inline-block;
-  max-width: rem(122);
+  width: fit-content;
   @include mq(md) {
     padding: rem(6.4) rem(15);
   }
@@ -68,6 +71,7 @@
     margin-top: rem(8);
     font-size: rem(24);
     line-height: calc(34.75/24);
+    font-weight: normal;
   }
 }
 

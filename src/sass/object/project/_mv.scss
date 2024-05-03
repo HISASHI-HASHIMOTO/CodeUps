@@ -20,7 +20,7 @@
   z-index: 10;
   text-align: center;
   @include mq(md) {
-    top: 49.7%;
+    top: 50.4%;
     left: 51.5%;
     transform: translate(-50%,-50%);
   }
@@ -54,7 +54,7 @@
   @include mq(md) {
     font-size: rem(20);
     letter-spacing: 0.03em;
-    margin-left: rem(-21);
+    margin-left: rem(-36);
     margin-top: rem(22);
   }
 }

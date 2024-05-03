@@ -26,6 +26,7 @@
     width: rem(200);
   }
 }
+
 .footer__title__link {
   display: inline-block;
 }
@@ -68,8 +69,8 @@
 
 .footer__list-contents {
   display: flex;
-  gap: rem(17.6);
-  margin-top: rem(24);
+  margin-top: rem(6.4);
+  gap: rem(12.8);
   @include mq(md) {
    margin-top: rem(11);
    gap: rem(56);
@@ -89,9 +90,20 @@
   }
 }
 
-.footer__nav-list:not(:first-of-type) {
+.footer__list-contents .footer__column-list:nth-child(2) {
+  padding-left: rem(6.4);
+  @include mq(md) {
+   
+  }
+}  
+
+.footer__nav-list {
   margin-top: rem(16);
 }
+
+// .footer__nav-list:not(:first-of-type) {
+//   margin-top: rem(16);
+// }
 
 .footer__copy {
   margin-top: rem(21);

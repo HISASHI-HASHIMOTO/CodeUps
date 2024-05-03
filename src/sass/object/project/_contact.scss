@@ -32,7 +32,7 @@
   height: rem(50); 
   @include mq(md) {  
     background-size: rem(312) rem(144);
-    right: -12.6%;
+    right: -12.5%;
     top: -9.5%;
     width: rem(312);
     height: rem(138); 
@@ -62,6 +62,9 @@
   margin-inline: auto;
   padding-bottom: rem(6);
   border-bottom: 1px solid $green;
+  @include mq(md) {
+   padding-bottom: rem(9.6);
+  }
 }
 
 .contact__address-title img {
@@ -166,7 +169,7 @@
 }
 
 .contact__contact-subtitle:first-of-type {
-  margin-top: rem(-8);
+  margin-top: rem(-6.4);
 }
 
 .contact__btn {

@@ -133,7 +133,7 @@
   text-align: center;
   margin-left: rem(-17.6);
   @include mq(md) {
-   margin-top: rem(37);
-   margin-left: 0;
+    margin-left: rem(-6.4);
+    margin-top: rem(38.4);
   }
 }

@@ -4,15 +4,15 @@
 .page-top-button {
   position: fixed;
   z-index: 9000;
-  right: rem(15);
-  bottom: rem(15);
+  right: rem(14);
+  bottom: rem(16);
   width: rem(48);
   height: rem(48);
   cursor: pointer;
   @include mq(md) {
-    width: rem(80);
-    height: rem(80);
-    right: rem(20);
+    width: rem(91.2);
+    height: rem(91.2);
+    right: rem(16);
     bottom: rem(20);
   }
 }
