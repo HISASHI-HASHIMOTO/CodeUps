@@ -4,7 +4,7 @@
   padding-top: rem(86);
   @include mq(md) {
     padding-top: rem(100);
-    background-image: url(/assets/images/common/Rectangle7.jpg);
+    background-image: url(../../assets/images/common/Rectangle7.jpg);
     background-size: 100% rem(500);
     background-repeat: no-repeat;
     position: relative;
@@ -15,7 +15,7 @@
     content: "";
     position: absolute;
     display: inline-block;
-    background-image: url(/assets/images/common/kinngyonahadai-white.png);
+    background-image: url(../../assets/images/common/kinngyonahadai-white.png);
     background-size: rem(437) rem(201);
     background-repeat: no-repeat;
     top: 3%;
