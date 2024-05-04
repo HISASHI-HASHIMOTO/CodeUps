@@ -20,24 +20,23 @@ $english-family: "Gotu", sans-serif;
 body {
   font-family: $base-font-family;
   position: relative;
-
 }
 
 // フォントウェイト
 $regular: 300;
 $normal: 400;
 $bold: 700;
- 
+
 ////////////////////
 // 色の指定
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #000000;
-$black2: #0D2936;
+$black2: #0d2936;
 $white: #ffffff;
 $green: #408f95;
-$green2: #0D2936;
+$green2: #0d2936;
 $green3: #ddf0f1;
 $brown: #796a64;
 $red: #c94800;

@@ -57,6 +57,12 @@
   display: inline-block;
 }
 
+.footer__sns-link:hover {
+  @include mq(md) {
+   opacity: 0.7;
+  }
+}
+
 .footer__sns-icon img {
   width: 100%;
   object-fit: cover;

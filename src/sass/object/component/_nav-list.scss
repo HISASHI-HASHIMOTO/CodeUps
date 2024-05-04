@@ -39,3 +39,10 @@
   font-size: rem(16);
   line-height: calc(18/16);
 }
+
+.nav-list__heading-link:hover,
+.nav-list__item-link:hover {
+  @include mq(md) {
+   opacity: 0.7;
+  }
+}

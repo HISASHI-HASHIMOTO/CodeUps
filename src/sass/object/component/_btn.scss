@@ -59,7 +59,6 @@
 }
 
 .btn:hover {
-  pointer-events: none;
   @include mq(md) {   
     color: $green;
     opacity: 1;
