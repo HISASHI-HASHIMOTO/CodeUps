@@ -59,9 +59,12 @@
 }
 
 .btn:hover {
-  color: $green;
-  opacity: 1;
-  z-index: 10;
+  pointer-events: none;
+  @include mq(md) {   
+    color: $green;
+    opacity: 1;
+    z-index: 10;
+  }
 }
 
 .btn:hover::after {

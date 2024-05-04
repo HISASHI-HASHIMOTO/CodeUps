@@ -1,5 +1,11 @@
 @use "global" as *;
 
+.about {
+  @include mq(md) {
+    overflow-x: clip;
+  }
+}
+
 .about__inner {
   @include mq(md) {
   }

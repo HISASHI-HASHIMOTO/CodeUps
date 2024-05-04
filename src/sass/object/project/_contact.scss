@@ -1,7 +1,9 @@
 @use "global" as *;
 
 .contact {
-
+  @include mq(md) {
+    overflow-x: clip;
+  }
 }
 
 

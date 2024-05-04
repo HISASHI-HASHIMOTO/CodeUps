@@ -49,7 +49,7 @@
   max-width: rem(500);
   margin-inline: auto;
   @include mq(md) {
-   min-width: rem(520);
+   max-width: rem(520);
   }
 }
 

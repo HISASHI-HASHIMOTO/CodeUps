@@ -71,9 +71,13 @@
   display: flex;
   margin-top: rem(6.4);
   gap: rem(12.8);
+  max-width: rem(500);
+  margin-inline: auto;
   @include mq(md) {
-   margin-top: rem(11);
+   margin-top: rem(-3.2);
    gap: rem(56);
+   max-width: 100%;
+   width: 100%;
   }
 }
 
@@ -93,23 +97,22 @@
 .footer__list-contents .footer__column-list:nth-child(2) {
   padding-left: rem(6.4);
   @include mq(md) {
-   
+    padding-left: 0;
   }
 }  
 
 .footer__nav-list {
   margin-top: rem(16);
+  @include mq(md) {
+   
+  }
 }
-
-// .footer__nav-list:not(:first-of-type) {
-//   margin-top: rem(16);
-// }
 
 .footer__copy {
   margin-top: rem(21);
   text-align: center;
   @include mq(md) {
-   margin-top: rem(64);
+   margin-top: rem(59);
   }
 }
 
