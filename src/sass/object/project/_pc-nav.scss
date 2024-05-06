@@ -22,7 +22,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; 
-  padding: rem(26) rem(20);
+  padding: 0 rem(20);
+  height: inherit;
 }
 
 .pc-nav__en-item {

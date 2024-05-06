@@ -11,6 +11,7 @@
   z-index: 8000;
   display: none;
   @include mq(md) {
+
   }
 }
 
@@ -24,6 +25,7 @@
   display: flex;
   gap: rem(6.4);
   margin-top: rem(-1.6);
+  justify-content: center;
 }
 
 .drawer-menu___column-list {

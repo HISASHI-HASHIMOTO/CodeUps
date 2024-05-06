@@ -3,6 +3,10 @@
 
 .voice__inner {
   position: relative;
+  max-width: rem(600);
+  @include mq(md) {
+   max-width: rem(1080);
+  }
 }
 
 .voice__inner::before {
@@ -12,7 +16,7 @@
     content: "";
     position: absolute;
     display: inline-block;
-    background-image: url(../../assets/images/common/kinngyonadadai_green.png);
+    background-image: url(/assets/images/common/kinngyonadadai_green.png);
     background-size: rem(301) rem(138);
     background-repeat: no-repeat;
     top: -19.6%;
@@ -29,7 +33,7 @@
     content: "";
     position: absolute;
     display: inline-block;
-    background-image: url(../../assets/images/common/ibaratatsu.png);
+    background-image: url(/assets/images/common/ibaratatsu.png);
     background-size: rem(71) rem(162);
     background-repeat: no-repeat;
     bottom: -11%;
@@ -46,7 +50,7 @@
   }
 }
 .voice__cards .cards2__item {
-  max-width: rem(500);
+  max-width: rem(600);
   margin-inline: auto;
   @include mq(md) {
    max-width: rem(520);

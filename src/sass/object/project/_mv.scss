@@ -3,14 +3,30 @@
 .mv {
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 
 .mv__swiper {
   // overflow: hidden;
+  height: inherit;
 }
 
-.p-mv__swiper-slide img {
-  width: 100%;
+.mv__swiper-wrapper {
+  height: inherit;
+}
+
+.mv__swiper-slide  {
+  height: inherit;
+}
+
+.mv__swiper-slide picture {
+  height: inherit;
+  object-fit: cover;
+  aspect-ratio: 375/667;
+  display: block;
+  @include mq(md) {
+   aspect-ratio: 1440/768;
+  }
 }
 
 .mv__title {

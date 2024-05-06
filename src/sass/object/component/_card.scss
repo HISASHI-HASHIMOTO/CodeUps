@@ -21,6 +21,9 @@
 
 .card__body {
   padding: rem(19) rem(16) rem(24) rem(16);
+  // display: flex;
+  // flex-direction: 1;
+  // flex-grow: 1;
   @include mq(md) {
     padding: rem(24) rem(16) rem(40) rem(16);
   }
@@ -51,6 +54,7 @@
   margin-top: rem(9.6);
   max-width: rem(272);
   margin-inline: auto;
+  flex-grow: 1;
   @include mq(md) {
     margin-top: rem(16);
   }

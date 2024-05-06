@@ -10,9 +10,18 @@
   }
 }
 
+.information__inner {
+  max-width: rem(600);
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(1080);
+    width: 100%;
+  }
+}
+
 .information__title {
   @include mq(md) {
-   margin-left: rem(-8);
+    margin-left: rem(-8);
   }
 }
 

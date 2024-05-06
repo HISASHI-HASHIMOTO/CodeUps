@@ -54,7 +54,9 @@ color.on('inview', function(){
     breakpoints:{
      // 画面幅が600px以上の場合は3枚
           768:{
-            slidesPerView: 3,
+            // slidesPerView: 3,
+            width: 333,
+            spaceBetween: 40,
           }
         },
         // ナビボタンが必要なら追加
@@ -62,7 +64,7 @@ color.on('inview', function(){
           nextEl: ".campaign__button-next",
           prevEl: ".campaign__button-prev",
         },
-    spaceBetween: 40,
+        spaceBetween: 40,
   });
 
 

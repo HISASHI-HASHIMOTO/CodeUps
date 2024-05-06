@@ -7,7 +7,11 @@
 }
 
 .about__inner {
+  max-width: rem(600);
+  width: 100%;
   @include mq(md) {
+    max-width: rem(1080);
+    width: 100%;
   }
 }
 
@@ -58,7 +62,7 @@
    margin-left: calc(200/1080 *100%);
    padding-top: rem(120);
    padding-bottom: rem(220);
-   background-image: url(../../assets/images/common/ocean2.jpg);
+   background-image: url(/assets/images/common/ocean2.jpg);
    background-size: cover;
    display: flex;
    justify-content: flex-start;
@@ -76,7 +80,7 @@
    height: rem(606);
    top: rem(-80);
    left: rem(-200);
-    background-image: url(../../assets/images/common/ocean1a.jpg);
+    background-image: url(/assets/images/common/ocean1a.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 10;
@@ -91,7 +95,7 @@
    height: rem(181);
    bottom: rem(-90);
    right: rem(-97);
-    background-image: url(../../assets/images/common/sango_isogintyaku.png);
+    background-image: url(/assets/images/common/sango_isogintyaku.png);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 10;
