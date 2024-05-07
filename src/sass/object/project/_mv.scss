@@ -22,15 +22,17 @@
   width: 100%;
 }
 
-.mv__swiper-slide picture {
-  height: inherit;
+.mv__swiper-slide img {
   object-fit: cover;
   aspect-ratio: 375/667;
   display: block;
   width: 100%;
+  height: 100%;
   @include mq(md) {
    aspect-ratio: 1440/768;
-   object-fit: contain;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
   }
 }
 
