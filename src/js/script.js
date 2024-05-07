@@ -50,12 +50,11 @@ color.on('inview', function(){
   });
 
   const slide2 = new Swiper("#slide2", {
-    slidesPerView: 1,
+    slidesPerView: "auto",
+    spaceBetween: 24,
     breakpoints:{
      // 画面幅が600px以上の場合は3枚
           768:{
-            // slidesPerView: 3,
-            width: 333,
             spaceBetween: 40,
           }
         },
@@ -64,7 +63,6 @@ color.on('inview', function(){
           nextEl: ".campaign__button-next",
           prevEl: ".campaign__button-prev",
         },
-        spaceBetween: 40,
   });
 
 

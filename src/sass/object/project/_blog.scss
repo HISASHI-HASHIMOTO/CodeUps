@@ -4,11 +4,35 @@
   padding-top: rem(86);
   @include mq(md) {
     padding-top: rem(100);
-    // background: linear-gradient(180deg, #f0bc68 0%, #f0bc68 50%, #c4d7d1 50%, #c4d7d1 100%);
-    background-image: url(/assets/images/common/Rectangle7.jpg);
-    background-size: 100% rem(500);
-    background-repeat: no-repeat;
     padding-inline: rem(25);
+    position: relative;
+  }
+}
+
+.blog::after {
+  @include mq(md) {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-image: url(/assets/images/common/Rectangle7.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 50%;
+   width: 100%;
+   z-index: -1;
+  }
+}
+
+.blog__bg-img {
+
+  @include mq(md) {
+    aspect-ratio: 1440 / 500;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
   }
 }
 
