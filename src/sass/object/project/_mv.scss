@@ -38,14 +38,14 @@
 
 .mv__title {
   position: absolute;
-  top: 49.7%;
-  left: 53%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%,-50%);
   z-index: 10;
   text-align: center;
   @include mq(md) {
-    top: 50.4%;
-    left: 51.5%;
+    top: 50%;
+    left: 51%;
     transform: translate(-50%,-50%);
   }
 }
@@ -60,9 +60,11 @@
   text-align: center;
   @include mq(md) {
     font-size: rem(80);
-    letter-spacing: 0.58em;
+    letter-spacing: 0.54em;
+    text-indent: 0.54em;
   }
 }
+
 
 .mv__sub-title {
   display: inline-block;

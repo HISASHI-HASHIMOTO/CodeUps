@@ -20,7 +20,16 @@ $english-family: "Gotu", sans-serif;
 body {
   font-family: $base-font-family;
   position: relative;
+  // overflow: hidden;
+  // height: 100%;
 }
+
+// *,
+// *::before,
+// *::after {
+//   outline: 1px solid red;
+// }
+
 
 // フォントウェイト
 $regular: 300;

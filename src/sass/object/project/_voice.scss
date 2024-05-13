@@ -1,15 +1,11 @@
 @use "global" as *;
 
-
-.voice__inner {
-  position: relative;
-  max-width: rem(600);
+.voice {
   @include mq(md) {
-   max-width: rem(1080);
+   position: relative;
   }
 }
-
-.voice__inner::before {
+.voice::before {
   content: none;
   display: none;
   @include mq(md) {   
@@ -20,11 +16,20 @@
     background-size: rem(301) rem(138);
     background-repeat: no-repeat;
     top: -19.6%;
-    left: -4.9%;
+    left:  calc(50% - min(48%, 40rem));
     width: rem(301);
     height: rem(138);
   }
 }
+
+.voice__inner {
+  position: relative;
+  max-width: rem(600);
+  @include mq(md) {
+  //  max-width: rem(1080);
+  }
+}
+
 
 .voice__inner::after {
   content: none;

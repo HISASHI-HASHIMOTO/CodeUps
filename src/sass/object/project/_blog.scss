@@ -8,6 +8,22 @@
     position: relative;
   }
 }
+.blog::before {
+  content: none;
+  display: none;
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url(/assets/images/common/kinngyonahadai-white.png);
+    background-size: rem(437) rem(201);
+    background-repeat: no-repeat;
+    left:  calc(50% - min(48%, 40rem));
+    top: 3.3%;
+    width: rem(437);
+    height: rem(207);
+  }
+}
 
 .blog::after {
   @include mq(md) {
@@ -40,29 +56,8 @@
   width: 100%;
   max-width: rem(600);
   margin-inline: auto;
-  @include mq(md) {
-   max-width: rem(1080);
-   padding-inline: 0;
-   position: relative;
-  }
 }
 
-.blog__inner::before {
-  content: none;
-  display: none;
-  @include mq(md) {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    background-image: url(/assets/images/common/kinngyonahadai-white.png);
-    background-size: rem(437) rem(201);
-    background-repeat: no-repeat;
-    left: -7.4%;
-    top: -10.7%;
-    width: rem(437);
-    height: rem(207);
-  }
-}
 
 .blog__title {
   @include mq(md) {
@@ -88,9 +83,7 @@
 .blog__btn {
   text-align: center;
   margin-top: rem(41);
-  margin-left: rem(-2);
   @include mq(md) {
    margin-top: rem(80);
-   margin-left: rem(-6.4);
   }
 }

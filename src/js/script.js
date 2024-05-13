@@ -35,6 +35,7 @@ color.on('inview', function(){
     } else {
       $('.js-drawer-menu').fadeIn();  
       $(this).addClass('is-open');
+      $('html').css('overflow','hidden') // 追記
     }
   });
 

@@ -1,16 +1,11 @@
 @use "global" as *;
 
 .campaign {
-  padding-left: rem(15);
   overflow: hidden;
 }
 
 .campaign__inner {
   position: relative;
-  max-width: rem(1080);
-  width: 100%;
-  margin-inline: auto;
-  overflow: visible;
 }
 
 .campaign__title {
@@ -102,8 +97,7 @@
 }
 
 .campaign__swiper-slide {
-  // max-width: rem(280);
-  // width: 100%;
+  max-width: rem(280);
   @include mq(md) {
     max-width: rem(333);
     width: 100%;
@@ -112,10 +106,8 @@
 }
 
 .campaign__slide-card {
-  // max-width: rem(280);
-  // width: 100%;
+  max-width: rem(280);
   @include mq(md) {
-    // display: inline-block;
     max-width: rem(333);
     width: 100%;
   }
@@ -125,9 +117,8 @@
 .campaign__btn {
   text-align: center;
   margin-top: rem(31.52);
-  margin-left: rem(-17.6);
+  padding-bottom: rem(5);
   @include mq(md) {
-    margin-left: rem(-17.6);
     margin-top: rem(70);
   }
 }

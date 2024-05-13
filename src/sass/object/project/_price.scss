@@ -7,18 +7,10 @@
   @include mq(md) {
     padding-top: rem(104);
     padding-bottom: rem(100);
+    position: relative;
   }
 }
-
-.price__inner {
-  max-width: rem(600);
-  @include mq(md) {
-   position: relative;
-   max-width: rem(1080);
-  }
-}
-
-.price__inner::after {
+.price::after {
   content: none;
   display: none;
   @include mq(md) {   
@@ -28,20 +20,24 @@
     background-image: url(/assets/images/common/kingyohanadai-green2.png);
     background-size: rem(443) rem(212);
     background-repeat: no-repeat;
-    bottom: -4.3%;
-    left: -5%;
+    bottom: 1.7%;
+    left:  calc(51% - min(48%, 40rem));
     width: rem(437);
     height: rem(201);
   }
 }
 
+.price__inner {
+  max-width: rem(600);
+}
+
+
 .price__contents {
   max-width: rem(600);
   width: 100%;
   margin-inline: auto;
-  margin-top: rem(-0.64);
   @include mq(md) {
-   margin-top: 0;
+   margin-top: rem(40);
    display: flex;
    flex-direction: row-reverse;
    max-width: rem(1080);
@@ -56,7 +52,7 @@
   @include mq(md) {
     max-width: calc(746/1080 * 100%);
     width: 100%;
-    margin-top: rem(40);
+    margin-top: 0;
   }
 }
 
@@ -80,13 +76,17 @@
     width: 100%;
   }
 }
-
 .price__list-content {
   margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(38);
   }
 } 
+
+.price__list-content:first-of-type {
+  margin-top: 0;
+}
+
 
 
 .price__list-title {

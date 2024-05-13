@@ -1,28 +1,10 @@
 @use "global" as *;
 
 .contact {
-  @include mq(md) {
-    overflow-x: clip;
-    padding-inline: rem(25);
-  }
-}
-
-
-
-.contact__inner {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  max-width: calc(276/345 * 100%);
-  width: 100%;
-  margin-inline: auto;
   position: relative;
-  @include mq(md) {
-    filter: none;
-    max-width: rem(1080);
-    width: 100%;
-  }
 }
 
-.contact__inner::after {
+.contact::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -30,17 +12,29 @@
   background-size: rem(109) rem(50);
   background-repeat: no-repeat;
   top: -4%;
-  right: -7%;
+  right:calc(50% - min(48%, 40rem));
   width: rem(109);
   height: rem(50); 
   @include mq(md) {  
     background-size: rem(312) rem(144);
-    right: -12.5%;
+    right:calc(50% - min(48%, 40rem));
     top: -9.5%;
     width: rem(312);
     height: rem(138); 
   }
 }
+
+
+.contact__inner {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  max-width: calc(276/345 * 100%);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+    filter: none;
+  }
+}
+
 
 .contact__contents  {
 
@@ -147,7 +141,9 @@
 .contact__contact-box {
   max-width: rem(315);
   margin-inline: auto;
+  text-align: center;
   @include mq(md) {
+  margin-left: rem(80);
 
   }
 }
@@ -155,10 +151,8 @@
 .contact__contact-title {
   font-size: rem(80);
   line-height: 1;
-  margin-left: rem(-6);
   @include mq(md) {
     font-size: rem(80);
-    margin-left: rem(11);
     margin-top: rem(-19);
   }
 }
@@ -167,7 +161,6 @@
   letter-spacing: 0.18em;
   @include mq(md) {
     letter-spacing: 0.3em;
-    margin-left: rem(11);
   }
 }
 
@@ -178,7 +171,5 @@
 .contact__btn {
   margin-top: rem(40);
   text-align: center;
-  @include mq(md) {
-    margin-left: rem(11);
-  }
+
 }
