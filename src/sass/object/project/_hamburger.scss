@@ -34,6 +34,8 @@
  .hamburger span:nth-child(3) {
   top: rem(24);
  }
+
+ 
  /*is-open時の動き*/
  .hamburger.is-open span:nth-child(1) {
   top: rem(13);
