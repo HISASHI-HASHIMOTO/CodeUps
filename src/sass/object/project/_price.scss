@@ -71,11 +71,14 @@
 .price__list-contents {
   width: 100%;
   margin-inline: auto;
+  margin-top: rem(40);
   @include mq(md) {
     max-width:  calc(492/1080 * 100%);
     width: 100%;
+    margin-top: initial;
   }
 }
+
 .price__list-content {
   margin-top: rem(40);
   @include mq(md) {

@@ -93,6 +93,7 @@ function PageTopAnime() {
   }
 }
 
+// ページトップボタン
 $(window).scroll(function () {
 PageTopAnime();
 });

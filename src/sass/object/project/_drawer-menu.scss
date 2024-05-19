@@ -18,16 +18,19 @@
 .drawer-menu__inner {
   padding: rem(30) rem(15) rem(111);
   height: 100vh;
+}
+
+.drawer-menu__wrapper {
   overflow: scroll;
 }
 
-.drawer-menu__list-contents {
+.drawer-menu__contents {
   display: flex;
   gap: rem(6.4);
   justify-content: center;
 }
 
-.drawer-menu___column-list {
+.drawer-menu__list {
   display: flex;
   flex-direction: column;
   text-align: left;
