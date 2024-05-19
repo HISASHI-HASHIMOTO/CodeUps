@@ -12,6 +12,10 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
+  pointer-events: none;
+  @include mq(md) {
+   pointer-events: all;
+  }
 }
 
 .btn::before {
