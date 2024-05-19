@@ -18,11 +18,12 @@
 .drawer-menu__inner {
   padding: rem(30) rem(15) rem(111);
   height: 100vh;
+  overflow-y: scroll;
 }
 
-.drawer-menu__wrapper {
-  overflow: scroll;
-}
+// .drawer-menu__wrapper {
+//   overflow: scroll;
+// }
 
 .drawer-menu__contents {
   display: flex;
