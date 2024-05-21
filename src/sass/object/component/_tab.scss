@@ -1,0 +1,57 @@
+@use "global" as *;
+
+
+.tab__button-list {
+  display: grid;
+  gap: rem(16) rem(20);
+  grid-template-columns: repeat(2,0fr);
+  @include mq(md) {
+    grid-template-columns: repeat(4,0fr);
+    gap: rem(32);
+  }
+}
+
+.tab__button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-top: rem(6);
+  padding-bottom: rem(6); 
+  width: rem(162);
+  border: 1px solid $green;
+  color: $green;
+  background-color: $white;
+  line-height: calc(22/14);
+  font-size: rem(14);
+}
+
+.tab__button.is-active {
+  background-color: $green;
+  color: $white;
+} 
+
+
+.tab__contents {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+} 
+
+.tab__content {
+  display: none;
+}
+
+.tab__content.is-active {
+  display: block;
+
+}
+
+.tab__items {
+  display: grid;
+  gap: rem(40) rem(20);
+  grid-template-columns: repeat(1,1fr);
+  @include mq(md) {
+    grid-template-columns: repeat(2,1fr);
+    gap: rem(80) rem(40);
+  }
+}

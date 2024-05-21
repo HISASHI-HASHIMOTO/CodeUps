@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.logo-icon {
+  position: relative;
+}
+
+.logo-icon::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/kinngyonadadai_green.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: rem(55);
+  left: calc(50% - min(46%, 38.9375rem));
+  top: rem(-22);
+  width: rem(120);
+  z-index: -10;
+  @include mq(md) {
+    height: rem(138);
+    left: calc(50% - min(46%, 38.9375rem));
+    top: rem(-70);
+    width: rem(317);
+  }
+}
+
+

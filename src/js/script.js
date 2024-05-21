@@ -32,10 +32,11 @@ color.on('inview', function(){
     if ($('.js-hamburger').hasClass('is-open')) {
       $('.js-drawer-menu').fadeOut();
       $(this).removeClass('is-open');
+      $('html').css('overflow', ''); // スクロールを元に戻す
     } else {
       $('.js-drawer-menu').fadeIn();  
       $(this).addClass('is-open');
-      $('html').css('overflow','hidden') // 追記
+      $('html').css('overflow','hidden') // 背景スクロールを固定にする
     }
   });
 
@@ -107,6 +108,21 @@ $('.page-top').click(function () {
       scrollTop: 0
   }, 500);
   return false;
+});
+
+
+// タブ
+$(function () {
+  const tabButton = $(".js-tab-button"),
+    tabContent = $(".js-tab-content");
+  tabButton.on("click", function () {
+    let index = tabButton.index(this);
+
+    tabButton.removeClass("is-active");
+    $(this).addClass("is-active");
+    tabContent.removeClass("is-active");
+    tabContent.eq(index).addClass("is-active");
+  });
 });
 
 
