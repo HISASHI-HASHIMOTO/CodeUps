@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.card5 {
+  border: 1px solid $green;
+  padding: rem(24);
+  @include mq(md) {
+   display: flex;
+   align-items: center;
+   gap: rem(48);
+  }
+}
+
+.card5__body {
+  max-width: rem();
+  width: 100%;
+  @include mq(md) {
+   max-width: rem(492);
+   width: 100%;
+  }
+}
+
+.card5__title {
+  font-size: rem(24);
+  font-weight: $bold;
+  line-height: 1;
+  padding-bottom: rem(8);
+  border-bottom: 1px solid $green;
+}
+
+.card5__text {
+  margin-top: rem(8);
+  font-size: rem(16);
+  line-height: calc(24/16);
+}
+
+.card5__img {
+  margin-top: rem(8);
+}
+
+.card5__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 297/189;
+  @include mq(md) {
+    aspect-ratio: 492/313;
+  }
+}
