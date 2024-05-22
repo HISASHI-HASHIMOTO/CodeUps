@@ -1,7 +1,6 @@
 @use "global" as *;
 
-
-.campaign-page__button-list {
+.voice-page__button-list {
   max-width: rem(600);
   margin-inline: auto;
   @include mq(md) {
@@ -10,9 +9,8 @@
   }
 }
 
-
-.campaign-page__item {
-  width: calc(280/345 * 100%);
+.voice-page__item {
+  width: 100%;
   max-width: rem(600);
   margin-inline: auto;
   @include mq(md) {
