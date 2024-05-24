@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.information-tab__button-list {
+  display: flex;
+  gap: rem(20);
+  @include mq(md) {
+   gap: rem(90);
+  }
+}
+
+.information-tab__button {
+  color: $green;
+  background-color: $green3;
+  padding: rem(10) rem(16);
+  font-size: rem(14);
+  box-shadow: 2px 4px 9px -5px rgba(0, 0, 0, 1);
+  min-width: rem(102);
+  position: relative;
+  @include mq(md) {
+    padding: rem(13) rem(18);
+  }
+}
+
+// .information-tab__button::before {
+//   content: "";
+//   display: inline-block;
+//   background-image: url(../../../images/common/Rectangle217.jpg);
+//   background-size: cover;
+//   width: rem(61);
+//   height: rem(54);
+// }
+
+.information-tab__button:first-of-type {
+  
+}
+.information-tab__button:nth-of-type(2) {
+
+}
+.information-tab__button:last-of-type {
+
+}
+ 
+.information-tab__button.is-active{
+  color: $white;
+  background-color: $green;
+}
+
+.information-tab__items {
+  margin-top: rem(16);
+  @include mq(md) {
+   margin-top: rem(24);
+  }
+}
+
+
+.information-tab__item {
+  display: none;
+}
+
+.information-tab__item.is-active {
+  display: block;
+}

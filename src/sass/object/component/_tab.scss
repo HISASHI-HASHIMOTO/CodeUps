@@ -5,9 +5,13 @@
   display: grid;
   gap: rem(16) rem(20);
   grid-template-columns: repeat(2,0fr);
+  max-width: rem(600);
+  margin-inline: auto;
   @include mq(md) {
     grid-template-columns: repeat(4,0fr);
     gap: rem(32);
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -43,7 +47,6 @@
 
 .tab__content.is-active {
   display: block;
-
 }
 
 .tab__items {
@@ -53,5 +56,15 @@
   @include mq(md) {
     grid-template-columns: repeat(2,1fr);
     gap: rem(80) rem(40);
+  }
+}
+
+.tab__item {
+  width: 100%;
+  max-width: rem(600);
+  margin-inline: auto;
+  @include mq(md) {
+   width: 100%;
+   max-width: rem(520);
   }
 }
