@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.aside__cards-item {
+  margin-top: rem(24);
+}
+
+.aside__box:not(:first-of-type) {
+  margin-top: rem(80);
+}
+
+.aside__card-item {
+  margin-top: rem(24);
+}
+
+
+.aside__archive {
+  margin-top: rem(24);
+  color: $green;
+}
+
+.aside__archive-link {
+  display: flex;
+  align-items: center;
+  font-size: rem(24);
+}
+
+.aside__archive-img {
+  width: rem(24);
+  height: rem(24);  
+}
+
+.aside__archive-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aside__archive-text {
+  margin-left: rem(8);
+}
+
+.aside__archive-link.aside__archive-link--month {
+  margin-left: rem(24);
+}

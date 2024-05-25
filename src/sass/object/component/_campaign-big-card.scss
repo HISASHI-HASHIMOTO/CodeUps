@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.card4 {
+.campaign-big-card {
   // display: block;
   display: flex;
   flex-direction: column;
@@ -9,11 +9,11 @@
   height: 100%;
 }
 
-.card4__img {
+.campaign-big-card__img {
   width: 100%;
 }
 
-.card4__img img {
+.campaign-big-card__img img {
   width: 100%;
   aspect-ratio: 280/188;
   object-fit: cover;
@@ -22,7 +22,7 @@
   }
 }
 
-.card4__body {
+.campaign-big-card__body {
   padding: rem(19) rem(16) rem(24) rem(16);
   display: flex;
   flex-direction: column;
@@ -32,13 +32,13 @@
   }
 }
 
-.card4__metabox {
+.campaign-big-card__metabox {
   border-bottom: 1px solid $green;
   padding-bottom: rem(8);
   flex-grow: 1;
 }
 
-.card4__meta {
+.campaign-big-card__meta {
   font-size: rem(12);
   padding: rem(4) rem(11);
   border: 1px solid $green;
@@ -49,12 +49,12 @@
   }
 }
 
-.card4__title {
+.campaign-big-card__title {
   margin-top: rem(4);
   line-height: calc(24 / 16);
 }
 
-.card4__box {
+.campaign-big-card__box {
   margin-top: rem(9.6);
   margin-inline: auto;
   max-width: rem(272);
@@ -64,7 +64,7 @@
   }
 }
 
-.card4__menu {
+.campaign-big-card__menu {
   text-align: center;
   line-height: calc(24 / 16);
   font-size: rem(14);
@@ -74,7 +74,7 @@
   }
 }
 
-.card4__price {
+.campaign-big-card__price {
   margin-top: rem(8);
   display: flex;
   gap: rem(16);
@@ -85,7 +85,7 @@
   }
 }
 
-.card4__original-price {
+.campaign-big-card__original-price {
   font-size: rem(20);
   line-height: 1;
   font-weight: bold;
@@ -96,7 +96,7 @@
   }
 }
 
-.card4__original-price::after {
+.campaign-big-card__original-price::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -107,7 +107,7 @@
   right: 0;
 }
 
-.card4__discounted-rate {
+.campaign-big-card__discounted-rate {
   font-size: rem(32);
   line-height: 1;
   color: $green;
@@ -117,26 +117,26 @@
   }
 }
 
-.card4:hover {
+.campaign-big-card:hover {
   @include mq(md) {
     opacity: 0.7;
   }
 }
 
-.card4__text {
+.campaign-big-card__text {
   margin-top: rem(24);
   line-height: calc(24/16);
 
 }
 
-.card4__time {
+.campaign-big-card__time {
   line-height: calc(18/16);
   color: $green;
   text-align: center;
   margin-top: rem(32);
 }
 
-.card4__contact-text {
+.campaign-big-card__contact-text {
   font-size: rem(14);
   line-height: calc(18/14);
   text-align: center;
@@ -144,7 +144,7 @@
   color: $green;
 }
 
-.cars4__btn {
+.campaign-big-card__btn {
   margin-top: rem(40);
   text-align: center;
 }

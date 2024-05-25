@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.container__wrapper {
+  @include mq(md) {
+    display: flex;
+    gap: rem(80);
+  }
+}
+
+.container__blog-page {
+  width: 100%;
+  @include mq(md) {
+   max-width: rem(706);
+   width: 100%;
+  }
+}
+
+.container__aside {
+  width: 100%;
+  @include mq(md) {
+   max-width: rem(294);
+   width: 100%;
+  }
+}

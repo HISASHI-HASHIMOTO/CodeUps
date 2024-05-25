@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.blog-information-card {
+  display: block;
+  padding: rem(16);
+  box-shadow: 2px 4px 9px -5px rgba(0, 0, 0, 1);
+  display: flex;
+  gap: rem(16);
+}
+
+.blog-information-card__img {
+  max-width: calc(121/294 * 100%);
+  width: 100%;
+}
+
+.blog-information-card__img {
+  aspect-ratio: 121/90;
+  width: 100%;
+}
+
+.blog-information-card__date {
+  font-size: rem(12);
+  line-height: calc(18/12);
+}
+
+.blog-information-card__title {
+  margin-top: rem(4);
+}

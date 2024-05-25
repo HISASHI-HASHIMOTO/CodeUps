@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.aside-card__img {
+  width: 100%;
+}
+
+.aside-card__img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 294/218;
+}
+
+.aside-card__meta {
+  margin-top: rem(16);
+  font-size: rem(12);
+  line-height: calc(18/12);
+
+}
+
+.aside-card__title {
+  margin-top: rem(8);
+  font-size: rem(24);
+  font-weight: $normal;
+}
+
+.aside-card__btn {
+  text-align: center;
+  margin-top: rem(40);
+}
