@@ -20,8 +20,10 @@ $english-family: "Gotu", sans-serif;
 body {
   font-family: $base-font-family;
   position: relative;
-  // overflow: hidden;
-  // height: 100%;
+}
+
+.no_scroll {
+  overflow: hidden;
 }
 
 // *,

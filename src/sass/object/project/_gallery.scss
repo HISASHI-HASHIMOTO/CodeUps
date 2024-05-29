@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.gallery__contents {
+  margin-top: rem(40);
+  @include mq(md) {
+   margin-top: rem(80);
+  }
+}
+
+.gallery__inner {
+  max-width: rem(600);
+  @include mq(md) {
+   max-width: rem(1080);
+  }
+}
+
+.gallery__content {
+
+  // gap: rem(8);
+  @include mq(md) {
+display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.gallery__content:nth-child(2n) {
+  margin-top: rem(8);
+  @include mq(md) {
+    flex-direction: row-reverse;
+  }
+}
+.gallery__content:nth-child(odd) .gallery__img-box {
+
+  @include mq(md) {
+    margin-left: rem(8);
+  }
+}
+.gallery__content:nth-child(2n) .gallery__rectangle-img {
+
+  @include mq(md) {
+    margin-left: rem(8);
+  }
+}
+
+.gallery__img-box {
+  display: flex; 
+  flex-direction: column;
+  gap: rem(8);
+}

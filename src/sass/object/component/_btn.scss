@@ -12,6 +12,7 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
+  justify-content: center;
   pointer-events: none;
   @include mq(md) {
    pointer-events: all;

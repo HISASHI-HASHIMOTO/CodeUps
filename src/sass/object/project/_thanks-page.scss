@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.thanks-page {
+  text-align: center; 
+}
+
+.thanks-page__text {
+  font-size: rem(16);
+  line-height: calc(18/16);  
+}
+
+.thanks-page__text:not(:first-of-type) {
+  margin-top: rem(40);
+}

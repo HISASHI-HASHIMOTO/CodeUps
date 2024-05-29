@@ -46,11 +46,15 @@
   left: 50%;
   transform: translate(-50%,-50%);
   color: $white;
-  text-transform: capitalize;
   font-size: rem(40);
-  font-family: $english-family;
+  font-family: "Lato",sans-serif;
+  font-weight: normal;
   z-index: 100;
   @include mq(md) {
     font-size: rem(80);
   }
+}
+
+.sub-mv__title::first-letter {
+  text-transform: uppercase;
 }

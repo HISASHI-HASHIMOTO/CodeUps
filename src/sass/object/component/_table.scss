@@ -1,0 +1,121 @@
+@use "global" as *;
+
+  .table,
+  .table__header,
+  .table__data-cell {
+    border-collapse: collapse;
+    border: 1px solid $green;
+    @include mq(md) {
+
+    }
+  }
+  
+  .table,
+  .table__tbody, 
+  .table__row {
+    width: 100%;
+  }
+  
+  .table__tbody .table__row {
+    display: flex;
+  }
+
+  .table__header {
+    background-color: $green; 
+    padding-top: rem(8); 
+    padding-bottom: rem(8);
+    justify-content: center;
+  }
+  
+  
+  .table__tbody .table__row .table__data-cell,
+  .table__tbody .table__row .table__header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    @include mq(md) {
+      // display: inline-block;
+    }
+  }
+  
+  .table__header-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: rem(8); 
+  }
+
+  .table__header-content.table__header-content--pc {
+    display: none;
+    @include mq(md) {
+      display: table-cell;
+      background-color: $green;
+      color: $white;
+      width: rem(200);
+    }
+  }
+
+  .table__header-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(8);
+  }
+
+  .table__column-img {
+    width: rem(64);
+    height: rem(64);    
+  }
+
+  .table__column-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .table__column-text {
+    font-size: rem(16);
+    font-weight: $bold;
+  }
+  
+  .table__header-img {
+    width: rem(24); 
+    height: rem(24);
+}
+
+.table__header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.table__header-text {
+  color: $white; 
+  display: inline-block;
+}
+
+.table__data-cell {
+  min-height: rem(60);
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.table__data-cell:nth-child(1) {
+  width: 100%;
+  max-width: calc(240 / 345 * 100%);
+  padding-inline: rem(20); 
+}
+
+.table__data-cell:nth-child(2) {
+  width: 100%;
+  max-width: calc(106 / 345 * 100%);
+  text-align: right;
+  justify-content: right;
+  padding-right: 16px;
+}
+

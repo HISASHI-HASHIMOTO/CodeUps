@@ -63,7 +63,7 @@ color.on('inview', function(){
         // ナビボタンが必要なら追加
         navigation: {
           nextEl: ".campaign__button-next",
-          prevEl: ".campaign__button-prev",
+          prevEl: ".campaign__butto n-prev",
         },
   });
 
@@ -125,6 +125,36 @@ $(function () {
   });
 });
 
+
+// モーダル
+$(function () {
+  $('.js-open').click(function () {
+    $("body").addClass("no_scroll"); // 背景固定させるクラス付与
+    $('.modal__overlay').fadeIn();
+    var id = $(this).data('id'); // 何番目のキャプション（モーダルウィンドウ）か認識
+    $('.modal__window[data-id="modal' + id + '"]').fadeIn();
+  });
+
+  $('.js-close, .modal__overlay').click(function () {
+    $("body").removeClass("no_scroll"); // 背景固定させるクラス削除
+    $('.modal__overlay, .modal__window').fadeOut();
+  });
+});
+
+// アコーディオン
+$(function () {
+  $(".js-accordion__item .js-accordion__content").css(
+    "display",
+    "block"
+  );
+  $(".js-accordion__item .js-accordion__title").addClass(
+    "is-open"
+  );
+  $(".js-accordion__title").on("click", function () {
+    $(this).toggleClass("is-open");
+    $(this).next().slideToggle(300);
+  });
+});
 
 
 });
