@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.privacy-policy__inner {
+  max-width: rem(600);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+   max-width: rem(800);
+  }
+}
+
+.privacy-policy__title {
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.pricacy-policy__contents {
+  margin-top: rem(40);
+}
+
+.privacy-policy__text-box {
+  margin-top: rem(32);
+}
+
+.privacy-policy__text,
+.privacy-policy__list-item {
+  font-size: rem(16);
+  line-height: calc(32/16);
+}
+
+.privacy-policy__list-item {
+  text-indent: -1em;
+  padding-left: rem(24);
+}
+
+.privacy-policy__text-item {
+  margin-top: rem(32);
+  
+}
