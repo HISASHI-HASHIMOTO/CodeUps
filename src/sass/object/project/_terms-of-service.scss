@@ -1,6 +1,7 @@
 @use "global" as *;
 
-.privacy-policy__inner {
+
+.terms-of-service__inner {
   max-width: rem(600);
   width: 100%;
   margin-inline: auto;
@@ -9,33 +10,33 @@
   }
 }
 
-.privacy-policy__title {
+.terms-of-service__title {
   font-size: rem(24);
   @include mq(md) {
     font-size: rem(32);
   }
 }
 
-.privacy-policy__contents {
+.terms-of-service__contents {
   margin-top: rem(40);
 }
 
-.privacy-policy__text-box {
+.terms-of-service__text-box {
   margin-top: rem(32);
 }
 
-.privacy-policy__text,
-.privacy-policy__list-item {
+.terms-of-service__text,
+.terms-of-service__list-item {
   font-size: rem(16);
   line-height: calc(32/16);
 }
 
-.privacy-policy__list-item {
+.terms-of-service__list-item {
   text-indent: -1em;
   padding-left: rem(24);
 }
 
-.privacy-policy__text-item {
+.terms-of-service__text-item {
   margin-top: rem(32);
   
 }

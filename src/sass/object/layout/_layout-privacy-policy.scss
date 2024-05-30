@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.layout-privacy-policy {
+.layout-terms-of-service {
   margin-top: rem(80);
   @include mq(md) {
    margin-top: rem(178);

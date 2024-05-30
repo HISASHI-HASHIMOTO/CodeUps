@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.section-404 {
+  padding-top: rem(80);
+  padding-bottom: rem(40);
+  background-color: $green;
+  background-image: url(/assets/images/common/404-bg.png);
+  background-size: 92%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include mq(md) {
+    padding-top: rem(147);
+    padding-bottom: rem(148);
+    background-size: 50%;
+    background-position: center left 30%;
+  }
+}
+
+.section-404__inner {
+
+
+}
+
+.section-404__title {
+  font-size: rem(80);
+  letter-spacing: 0.5em;
+  color: $white;
+  font-weight: normal;
+  text-align: center;
+  text-indent: 0.5em;
+  @include mq(md) {
+   font-size: rem(160);
+  }
+}
+
+.section-404__text {
+  text-align: center;
+  color: $white;
+  font-size: rem(16);
+  line-height: calc(24/16);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.section-404__btn {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+   margin-top: rem(80);
+  }
+}

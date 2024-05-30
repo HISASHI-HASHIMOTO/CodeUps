@@ -18,6 +18,10 @@
    pointer-events: all;
   }
 }
+.btn.btn--white {
+  background-color: $white;
+  color: $green;
+}
 
 .btn::before {
   content: "";
@@ -30,8 +34,16 @@
   z-index: -100;
 }
 
+.btn.btn--white::before {
+  border-color: $white;
+} 
+
 .btn__text {
   font-size: rem(14);
+}
+
+.btn__text-upper {
+  text-transform: uppercase;
 }
 
 .btn__text::first-letter {
@@ -46,6 +58,10 @@
   transform: skew(45deg);
   width: rem(40);
   margin-top: rem(-4);
+}
+
+.btn__arrow.btn__text--white {
+  border-color: $green;
 }
 
 .btn::after {
@@ -63,11 +79,22 @@
   z-index: -10;
 }
 
+.btn.btn--white::after {
+  background: $green;
+  border-color:  $white;
+}
+
 .btn:hover {
   @include mq(md) {   
     color: $green;
     opacity: 1;
     z-index: 10;
+  }
+}
+
+.btn.btn--white:hover {
+  @include mq(md) {
+   color: $white;
   }
 }
 
@@ -77,4 +104,8 @@
 
 .btn:hover .btn__arrow {
   border-color: $green;
+}
+
+.btn.btn--white:hover .btn__arrow {
+  border-color: $white;
 }
