@@ -137,7 +137,7 @@ $(function () {
 
   $('.js-close, .modal__overlay').click(function () {
     $("body").removeClass("no_scroll"); // 背景固定させるクラス削除
-    $('.modal__overlay, .modal__window').fadeOut();
+    $(' .modal__overlay, .modal__window').fadeOut();
   });
 });
 

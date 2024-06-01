@@ -1,9 +1,12 @@
 @use "global" as *;
 
+.table {
+  border-collapse: collapse;
+}
+
   .table,
   .table__header,
   .table__data-cell {
-    border-collapse: collapse;
     border: 1px solid $green;
     @include mq(md) {
 
