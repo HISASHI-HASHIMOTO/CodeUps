@@ -174,7 +174,7 @@
 }
 
 
-.form__check input:checked + .form__checkbox-text::after {
+.form__check input:checked + .form__checkbox-text.form__checkbox-text--send::after {
   border-bottom: 2px solid $red;
   border-right: 2px solid $red;
   content: "";
