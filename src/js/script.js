@@ -127,19 +127,23 @@ $(function () {
 
 
 // モーダル
-$(function () {
-  $('.js-open').click(function () {
-    $("body").addClass("no_scroll"); // 背景固定させるクラス付与
-    $('.modal__overlay').fadeIn();
-    var id = $(this).data('id'); // 何番目のキャプション（モーダルウィンドウ）か認識
-    $('.modal__window[data-id="modal' + id + '"]').fadeIn();
-  });
-
-  $('.js-close, .modal__overlay').click(function () {
-    $("body").removeClass("no_scroll"); // 背景固定させるクラス削除
-    $(' .modal__overlay, .modal__window').fadeOut();
-  });
+$(".course-item img").click(function () {
+  // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
+  $("#graydisplay").html($(this).prop("outerHTML"));
+  //そして、fadeInで表示する。
+  $("body").addClass("no_scroll"); // 背景固定させるクラス付与
+  $("#graydisplay").fadeIn(200);
+  return false;
 });
+// コース画像モーダル非表示イベント
+// モーダル画像背景 または 拡大画像そのものをクリックで発火
+$("#graydisplay").click(function () {
+  // 非表示にする
+  $("body").removeClass("no_scroll"); // 背景固定させるクラス削除
+  $("#graydisplay").fadeOut(200);
+  return false;
+});
+
 
 // アコーディオン
 $(function () {
