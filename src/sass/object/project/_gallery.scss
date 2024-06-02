@@ -1,9 +1,29 @@
 @use "global" as *;
 
+.gallery {
+  position: relative;
+}
+
 .gallery__contents {
   margin-top: rem(40);
   @include mq(md) {
    margin-top: rem(80);
+  }
+}
+
+.gallery::after {
+  @include mq(md) {  
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url(/assets/images/common/kingyohanadai-green2.png);
+    background-size: rem(109) rem(50);
+    background-repeat: no-repeat;
+    background-size: rem(312) rem(144);
+    right:calc(50% - min(48%, 40rem));
+    top: -4.5%;
+    width: rem(312);
+    height: rem(138); 
   }
 }
 
@@ -15,10 +35,10 @@
 }
 
 .gallery__content {
-
-  // gap: rem(8);
+  gap: rem(8);
+  display: flex;
+  flex-direction: column;
   @include mq(md) {
-display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -30,21 +50,13 @@ display: flex;
     flex-direction: row-reverse;
   }
 }
-.gallery__content:nth-child(odd) .gallery__img-box {
-
-  @include mq(md) {
-    margin-left: rem(8);
-  }
-}
-.gallery__content:nth-child(2n) .gallery__rectangle-img {
-
-  @include mq(md) {
-    margin-left: rem(8);
-  }
-}
 
 .gallery__img-box {
   display: flex; 
   flex-direction: column;
   gap: rem(8);
+}
+
+.gallery__img img {
+  cursor: pointer;
 }

@@ -1,0 +1,87 @@
+@use "global" as *;
+
+
+.pagenation__contents {
+  display: flex;
+  justify-content: center;
+}
+
+.pagenation__link-pre,
+.pagenation__link-page,
+.pagenation__link-post {
+  display: flex;
+  align-items: center;
+  font-size: rem(16);
+  border: 1px solid $green;
+  padding: rem(10) rem(14);
+  color: $green;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.pagenation__link-page + .pagenation__link-page {
+  margin-left: rem(12); 
+}
+
+.pagenation__link-page.pagenation__link--green {
+  background-color: $green;
+  color: $white;
+}
+
+.pagenation__link-pre:hover,
+.pagenation__link-page:hover,
+.pagenation__link-post:hover
+ {
+  background-color: $green;
+  color: $white;
+  transition: 0.3s;
+} 
+
+.pagenation__link-pre {
+  margin-right: rem(40);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pagenation__link-pre::before {
+  content: '';
+  position: absolute;
+  width: rem(14);
+  height: rem(14);
+  border-top: 1px solid $green;
+  border-right: 1px solid $green;
+  transform: rotate(-135deg);
+  left: 43%;
+  top: 36%;
+}
+
+.pagenation__link-pre:hover::before  {
+  background-color: $green;
+  border-top: 1px solid $white;
+  border-right: 1px solid $white;
+}
+
+.pagenation__link-post {
+  margin-left: rem(40);
+  position: relative;
+} 
+
+.pagenation__link-post::before {
+  content: '';
+  position: absolute;
+  width: rem(14);
+  height: rem(14);
+  border-top: 1px solid $green;
+  border-right: 1px solid $green;
+  transform: rotate(45deg);
+  right: 43%;
+  top: 38%;
+}
+
+.pagenation__link-post:hover::before  {
+  background-color: $green;
+  border-top: 1px solid $white;
+  border-right: 1px solid $white;
+}

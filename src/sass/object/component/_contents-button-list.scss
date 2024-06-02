@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.contents-button-list {
+  display: grid;
+  gap: rem(16) rem(20);
+  grid-template-columns: repeat(2,0fr);
+  max-width: rem(600);
+  margin-inline: auto;
+  @include mq(md) {
+    grid-template-columns: repeat(auto-fit, minmax(162px, 0rem));
+    gap: rem(32);
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.contents-button-list__button {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: rem(6);
+  padding-bottom: rem(6); 
+  width: rem(162);
+  border: 1px solid $green;
+  color: $green;
+  background-color: $white;
+  line-height: calc(22/14);
+  font-size: rem(14);
+  transition: all 0.3s;
+}
+
+.contents-button-list__button.contents-button-list__button--green {
+  background-color: $green;
+  color: $white;
+}
+
+.contents-button-list__button:hover {
+  background-color: $green;
+  color: $white;
+} 

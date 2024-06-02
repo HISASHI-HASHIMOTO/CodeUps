@@ -5,12 +5,20 @@
 }
 
   .table,
-  .table__header,
-  .table__data-cell {
-    border: 1px solid $green;
-    @include mq(md) {
+  thead,
+  tr,
+  th,
+  td {
+    border-collapse: collapse;
+  }
 
-    }
+  td {
+    border-right: 1px solid $green;
+  }
+
+  tr {
+    border-bottom: 1px solid $green;
+    border-left: 1px solid $green;
   }
   
   .table,
@@ -66,7 +74,7 @@
   }
 
   .table__column-img {
-    width: rem(64);
+    width: rem(72);
     height: rem(64);    
   }
 

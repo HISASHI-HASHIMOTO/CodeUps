@@ -11,20 +11,26 @@
   line-height: 1;
   padding-bottom: rem(4);
   border-bottom: 1px solid $green;
+  @include mq(md) {
+   padding-bottom: rem(8);
+   font-size: rem(32);
+   letter-spacing: 0.05em;
+  }
 }
 
 .blog-article__img {
   width: 100%; 
   margin-top: rem(24);
+  max-width: 100%;
   @include mq(md) {
     margin-top: rem(40);
     max-width: rem(700);
+    width: 100%;
   }
 }
 
 .blog-article__img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   aspect-ratio: 345/231;
   @include mq(md) {

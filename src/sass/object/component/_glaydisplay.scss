@@ -1,0 +1,28 @@
+@use "global" as *;
+
+/* モーダルウィンドウ */
+#graydisplay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba($color: #202020, $alpha: 0.8);
+  z-index: 9999;
+}
+
+#graydisplay img {
+  bottom: 0;
+  height: 90%;
+  left: 5%;
+  max-height: 100%;
+  max-width: calc(920 / 1440* 100%);
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 100%;
+  margin-inline: auto;
+}

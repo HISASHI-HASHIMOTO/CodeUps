@@ -5,11 +5,26 @@
 }
 
 .aside__box:not(:first-of-type) {
-  margin-top: rem(80);
+  margin-top: rem(81);
 }
 
 .aside__card-item {
   margin-top: rem(24);
+}
+
+.aside__campaign-card {
+  max-width: rem(294);
+}
+
+.aside__campaign-card:first-of-type {
+  margin-top: rem(26);
+}
+
+.aside__campaign-card:not(:first-of-type) {
+  margin-top: rem(24);
+  @include mq(md) {
+   margin-top: rem(40);
+  }
 }
 
 
@@ -36,7 +51,7 @@
 }
 
 .aside__archive-text {
-  margin-left: rem(8);
+  margin-left: rem(11);
 }
 
 .aside__archive-link.aside__archive-link--month {

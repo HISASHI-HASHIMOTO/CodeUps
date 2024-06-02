@@ -42,7 +42,7 @@
 
 .sub-mv__title {
   position: absolute;
-  top: 61%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: $white;
@@ -51,7 +51,8 @@
   font-weight: normal;
   z-index: 100;
   @include mq(md) {
-    font-size: rem(80);
+    letter-spacing: -0.04em;
+    font-size: 75px;
   }
 }
 

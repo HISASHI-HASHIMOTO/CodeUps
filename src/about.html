@@ -262,7 +262,7 @@
       </div>
 
       <!-- aboutセクション -->
-      <section class="about layout-about-page fish-icon">
+      <section class="about layout-sub-page fish-icon ">
         <div class="about__inner inner">
           <div class="about__contents">
             <div class="about__img-box">
@@ -297,7 +297,7 @@
       </section>
 
       <!-- galleryセクション -->
-      <section class="gallery layout-gallery">
+      <section class="gallery layout-gallery ">
         <div class="gallery__inner inner">
           <div class="galley__title">
             <div class="section-header">
@@ -306,86 +306,105 @@
             </div>
           </div>
           <div class="gallery__contents">
-            <div class="container">
-              <h2 class="section-title">モーダル画像</h2>
-              <div class="course-wrapper">
-                <div class="course-item course-item">
-                  <img src="./assets/images/common/gallery-img1.jpg" alt="画像その１" class="course-item-img">
+            <div class="gallery__content">
+              <div class="gallery__img">
+                <img
+                  src="./assets/images/common/gallery-img1.jpg"
+                  alt="珊瑚礁と海底に泳ぐ大量の魚"/>
+              </div>
+              <div class="gallery__img-box">
+                <div class="gallery__img">
+                  <img
+                    src="./assets/images/common/gallery-img2.jpg"
+                    alt="エメラルドグリーンの海岸沿いに停泊する船"/>
                 </div>
-                <div class="corse-item__img-box">
-                  <div class="course-item">
-                    <img src="./assets/images/common/gallery-img2.jpg" alt="画像その２" class="course-item-img">
-                  </div>
-                  <div class="course-item">
-                    <img src="./assets/images/common/gallery-img3.jpg" alt="画像その３" class="course-item-img">
-                  </div>
+                <div class="gallery__img">
+                  <img
+                    src="./assets/images/common/gallery-img3.jpg"
+                    alt="2匹並んで泳ぐチョウチョウウオ"/>
                 </div>
               </div>
             </div>
-        
-            <!-- コース画像のモーダル時のグレー背景 -->
-            <div id="graydisplay"></div>
-
-            <div class="gallery__content modal">
-              <!-- オーバーレイ -->
-              <div class="modal__overlay"></div>
-              <!-- モーダルウィンドウ4 -->
-              <div class="modal__window" data-id="modal4">
-                <!-- 画像エリア -->
-                <button class="modal_img-box">
-                  <div class="modal__img js-close">
-                    <img
-                      src="./assets/images/common/gallery-img4.jpg"
-                      alt="海底を元気に泳ぐ黄色い魚"
-                    />
-                  </div>
-                </button>
-              </div>
-              <!-- モーダルウィンドウ5 -->
-              <div class="modal__window" data-id="modal5">
-                <!-- 画像エリア -->
-                <button class="modal_img-box">
-                  <div class="modal__img js-close">
-                    <img
-                      src="./assets/images/common/gallery-img5.jpg"
-                      alt="海中の中を煌びやかに賑わう魚群"
-                    />
-                  </div>
-                </button>
-              </div>
-              <!-- モーダルウィンドウ6 -->
-              <div class="modal__window" data-id="modal6">
-                <!-- 画像エリア -->
-                <button class="modal_img-box">
-                  <div class="modal__img js-close">
-                    <img
-                      src="./assets/images/common/gallery-img6.jpg"
-                      alt="珊瑚礁と共に過ごす黄色い魚"
-                    />
-                  </div>
-                </button>
-              </div>
-
-              <!-- モーダルボタン -->
-              <button class="gallery__rectangle-img js-open" data-id="6">
+            <div class="gallery__content">
+              <div class="gallery__img">
                 <img
                   src="./assets/images/common/gallery-img6.jpg"
-                  alt="海底を元気に泳ぐ黄色い魚"
-                />
-              </button>
+                  alt="珊瑚礁の付近で泳ぐチョウチョウウオ"/>
+              </div>
               <div class="gallery__img-box">
-                <button class="gellery__img js-open" data-id="4">
+                <div class="gallery__img">
                   <img
                     src="./assets/images/common/gallery-img4.jpg"
-                    alt="海中の中を煌びやかに賑わう魚群"
-                  />
-                </button>
-                <button class="gellery__img js-open" data-id="5">
+                    alt="海底を泳ぐ魚"/>
+                </div>
+                <div class="gallery__img">
                   <img
                     src="./assets/images/common/gallery-img5.jpg"
-                    alt="珊瑚礁と共に過ごす黄色い魚"
-                  />
-                </button>
+                    alt="海中の中を優雅に泳ぐ魚群"/>
+                </div>
+              </div>
+            </div>
+
+            <!-- コース画像のモーダル時のグレー背景 -->
+            <div id="graydisplay"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contactセクション -->
+      <section class="contact layout-contact">
+        <div class="contact__inner inner">
+          <div class="contact__contents">
+            <div class="contact__address-box">
+              <div class="contact__address-title">
+                <img
+                  src="./assets/images/common/CodeUps.png"
+                  alt="CodeUpsロゴ"
+                />
+              </div>
+              <div class="contact__address-body">
+                <div class="contact__address-text-box">
+                  <p class="contact__address-text">沖縄県那覇市1-1</p>
+                  <p class="contact__address-text">
+                    <a
+                      href="tel:0120-000-0000"
+                      class="contact__address-telephone"
+                      >TEL:0120-000-0000</a
+                    >
+                  </p>
+                  <p class="contact__address-text">営業時間:8:30-19:00</p>
+                  <p class="contact__address-text">定休日:毎週火曜日</p>
+                </div>
+                <div class="contact__address-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.19257859206!2d127.68999638202148!3d26.222931480275573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5696278d6553b%3A0xcb44277c653ed00b!2z44CSOTAwLTAwMDYg5rKW57iE55yM6YKj6KaH5biC44GK44KC44KN44G-44Gh77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1715633080292!5m2!1sja!2sjp"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="contact__contact-box">
+              <div class="contact__title section-header">
+                <h2 class="contact__contact-title section-header__title">
+                  contact
+                </h2>
+                <p class="contact__contact-subtitle section-header__subtitle">
+                  お問い合わせ
+                </p>
+                <p class="contact__contact-subtitle section-header__subtitle">
+                  ご予約・お問い合わせはコチラ
+                </p>
+              </div>
+              <div class="contact__btn">
+                <a class="btn">
+                  <span class="btn__text">contact&nbsp;us</span>
+                  <div class="btn__arrow"></div>
+                </a>
               </div>
             </div>
           </div>

@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .aside-campaign-card {
-  // display: block;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 4px 9px -5px rgba(0, 0, 0, 1);
@@ -11,15 +10,14 @@
 
 .aside-campaign-card__img {
   width: 100%;
+  height: rem(188);
 }
 
 .aside-campaign-card__img img {
   width: 100%;
   aspect-ratio: 280/188;
   object-fit: cover;
-  @include mq(md) {
-    aspect-ratio: 333/223;
-  }
+  height: 100%;
 }
 
 .aside-campaign-card__body {  
@@ -28,7 +26,7 @@
   flex-direction: column;
   flex-grow: 1;
   @include mq(md) {
-    padding: rem(16) rem(23) rem(23) rem(23);
+    padding: rem(16) rem(23) rem(22) rem(23);
   }
 }
 
