@@ -29,7 +29,7 @@
   transition: all 0.3s;
 }
 
-.contents-button-list__button.contents-button-list__button--green {
+.contents-button-list__button.is-active {
   background-color: $green;
   color: $white;
 }

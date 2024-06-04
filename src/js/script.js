@@ -127,7 +127,7 @@ $(function () {
 
 
 // モーダル
-$(".gallery__img img").click(function () {
+$(".gallery__item img").click(function () {
   // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
   $("#graydisplay").html($(this).prop("outerHTML"));
   //そして、fadeInで表示する。

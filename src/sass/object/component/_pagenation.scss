@@ -9,22 +9,30 @@
 .pagenation__link-pre,
 .pagenation__link-page,
 .pagenation__link-post {
-  display: flex;
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-size: rem(16);
   border: 1px solid $green;
-  padding: rem(10) rem(14);
+  padding: 0 rem(5);
   color: $green;
   cursor: pointer;
   font-weight: bold;
+  min-width: rem(38);
+  height: rem(38);
+}
 
+.pagenation__link-page:nth-child(n + 6)  {
+  display: none;
+  @include mq(md) {
+   display: grid;
+  }
 }
 
 .pagenation__link-page + .pagenation__link-page {
   margin-left: rem(12); 
 }
 
-.pagenation__link-page.pagenation__link--green {
+.pagenation__link-page.is-active {
   background-color: $green;
   color: $white;
 }
@@ -48,8 +56,8 @@
 .pagenation__link-pre::before {
   content: '';
   position: absolute;
-  width: rem(14);
-  height: rem(14);
+  width: rem(11);
+  height: rem(11);
   border-top: 1px solid $green;
   border-right: 1px solid $green;
   transform: rotate(-135deg);
@@ -71,13 +79,13 @@
 .pagenation__link-post::before {
   content: '';
   position: absolute;
-  width: rem(14);
-  height: rem(14);
+  width: rem(11);
+  height: rem(11);
   border-top: 1px solid $green;
   border-right: 1px solid $green;
   transform: rotate(45deg);
-  right: 43%;
-  top: 38%;
+  right: 42%;
+  top: 34%;
 }
 
 .pagenation__link-post:hover::before  {
