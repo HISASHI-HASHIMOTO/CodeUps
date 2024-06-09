@@ -9,9 +9,6 @@
   margin-top: rem(24);
 }
 
-.archive__list:not(:first-of-type) {
-  margin-top: rem(4);
-}
 
 .archive__list-title {
   position: relative;
@@ -32,7 +29,7 @@
   height: rem(24);
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: rem(16);
+  margin-left: rem(32);
 }
 
 .archive__list-item {
