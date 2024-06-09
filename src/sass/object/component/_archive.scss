@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.archive__list {
+  color: $green;
+  font-size: rem(24);
+}
+
+.archive__list:first-of-type {
+  margin-top: rem(24);
+}
+
+.archive__list:not(:first-of-type) {
+  margin-top: rem(4);
+}
+
+.archive__list-title {
+  position: relative;
+  cursor: pointer;
+  display: list-item;
+}
+
+.archive__list-title::marker {
+  display: block;
+  font-size: 2rem;
+}
+
+.archive__list-item::before {
+  content: "";
+  background-image: url(../images/common/green-arrow.svg);
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: rem(16);
+}
+
+.archive__list-item {
+  display: flex;
+  align-items: center;
+}
+
+.archive__list a.archive__list-item::before {
+  content: none;
+}

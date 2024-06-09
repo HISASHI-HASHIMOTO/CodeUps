@@ -26,7 +26,7 @@
   flex-direction: column;
   flex-grow: 1;
   @include mq(md) {
-    padding: rem(16) rem(23) rem(22) rem(23);
+    padding: rem(10) rem(23) rem(22) rem(23);
   }
 }
 
@@ -48,7 +48,7 @@
   max-width: rem(272);
   margin-inline: auto;
   @include mq(md) {
-    margin-top: rem(16);
+    margin-top: rem(10);
   }
 }
 
@@ -58,7 +58,6 @@
   font-size: rem(14);
 
   @include mq(md) {
-    margin-left: rem(-17.6);
     font-size: rem(14);
   }
 }

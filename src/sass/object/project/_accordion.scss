@@ -21,6 +21,7 @@
   @include mq(md) {
     padding: rem(25) rem(40);
     font-size: rem(20);
+    cursor: pointer;
   }
 }
 
@@ -36,7 +37,7 @@
   height: rem(1);
 }
 
-.accordion__title.is-open::before  {
+.accordion__title.is-open::before {
   opacity: 0;
 }
 
@@ -53,20 +54,16 @@
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
 
-.accordion__title.is-open::after  {
+.accordion__title.is-open::after {
   transform: translateY(-50%) rotate(180deg);
 }
 
-.accordion__content  {
-  display: none;
+.accordion__content {
+  display: block;
   padding: rem(24) rem(16); 
   border: 1px solid $green;
   @include mq(md) {
    padding: rem(40);
    margin-top: rem(16);
   }
-}
-
-.accordion__text {
-
 }

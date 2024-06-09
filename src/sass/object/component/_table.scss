@@ -120,6 +120,9 @@
   width: 100%;
   max-width: calc(240 / 345 * 100%);
   padding-inline: rem(20); 
+  @include mq(md) {
+    justify-content: flex-start;
+  }
 }
 
 .table__data-cell:nth-child(2) {

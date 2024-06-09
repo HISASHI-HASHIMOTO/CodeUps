@@ -6,24 +6,24 @@
   display: flex;
   flex-direction: column;
   @include mq(md) {
-   flex-direction: row;
-   align-items: flex-start;
-   justify-content: space-between;
-   padding-bottom: rem(40);
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: rem(40);
   }
 }
 
 .form__item:not(:first-of-type) {
   margin-top: rem(24);
   @include mq(md) {
-   margin-top: rem(40);
+    margin-top: rem(40);
   }
-} 
+}
 
 .form__item dt {
   @include mq(md) {
-   max-width: rem(181);
-   width: 100%;
+    max-width: rem(181);
+    width: 100%;
   }
 }
 
@@ -37,9 +37,8 @@
   @include mq(md) {
     max-width: rem(480);
     width: 100%;
-   }
+  }
 }
-
 
 .form__label-name,
 .form__label-required {
@@ -65,11 +64,9 @@
   width: 100%;
   margin-top: rem(16);
   @include mq(md) {
-   margin-top: 0;
+    margin-top: 0;
   }
 }
-
-
 
 .form__item dd input::placeholder {
   font-size: rem(16);
@@ -81,10 +78,10 @@
   display: flex;
   flex-direction: column;
   @include mq(md) {
-   margin-top: 0;
-   margin-left: rem(11);
-   max-width: rem(700);
-   width: 100%;
+    margin-top: 0;
+    margin-left: rem(11);
+    max-width: rem(700);
+    width: 100%;
   }
 }
 
@@ -127,7 +124,6 @@
   width: rem(5);
 }
 
-
 .form__select select {
   background-image: url(/assets/images/common/Polygon-bottom.png);
   background-position: right rem(16) top rem(16);
@@ -138,7 +134,7 @@
   width: 100%;
   margin-top: rem(16);
   @include mq(md) {
-   margin-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -146,21 +142,26 @@
   min-height: rem(200);
 }
 
-
 .form__check {
   margin-top: rem(40);
   max-width: rem(282);
   margin-inline: auto;
   @include mq(md) {
-   margin-top: rem(80);
-   max-width: rem(373);
+    margin-top: rem(80);
+    max-width: rem(373);
   }
 }
 
-.form__checkbox-text.form__checkbox-text--send {
+.form__check span {
   align-items: flex-start;
   font-size: rem(14);
   padding-left: rem(30);
+  display: flex;
+  align-items: center;
+  position: relative;
+  @include mq(md) {
+   align-items: center;
+  }
 }
 
 .form__checkbox-text.form__checkbox-text--send::before {
@@ -169,28 +170,56 @@
   content: "";
   display: inline-block;
   border: 1px solid $green;
-  position: absolute;
+  // position: absolute;
   left: 0;
 }
 
+.form__check span::before {
+  width: rem(22);
+  height: rem(22);
+  content: "";
+  display: inline-block;
+  border: 1px solid $green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include mq(md) {
+    margin-right: rem(16);
+  }
+}
 
-.form__check input:checked + .form__checkbox-text.form__checkbox-text--send::after {
+.form__check span::after {
   border-bottom: 2px solid $red;
   border-right: 2px solid $red;
   content: "";
   display: block;
   height: rem(10);
-  left: rem(6);
+  left: 3%;
   position: absolute;
-  top: rem(6);
+  top: 10%;
   transform: rotate(45deg);
   width: rem(5);
+  opacity: 0;
+  @include mq(md) {
+    left: 3%;
+    top: 25%;
+  }
+}
+
+.form__check input:checked + .form__checkbox-text2::after {
+  opacity: 1;
+}
+
+.form__checkbox-text2 {
+  @include mq(md) {
+    white-space: nowrap;
+  }
 }
 
 .form__btn {
   text-align: center;
   margin-top: rem(24);
   @include mq(md) {
-   margin-top: rem(40);
+    margin-top: rem(40);
   }
 }

@@ -1,0 +1,11 @@
+@use 'global' as *;
+
+.sub-inner {
+  max-width: rem(630);
+  margin-inline: auto;
+  padding-inline: rem(15);
+  @include mq(md) {
+   max-width: rem(750);
+   padding-inline: rem(25);
+  }
+}
