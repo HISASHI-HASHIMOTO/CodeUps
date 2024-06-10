@@ -81,7 +81,6 @@ function PageTopAnime() {
       $('.page-top').addClass('DownMove');  
     }
   }
-  
   var wH = window.innerHeight; 
   var footerPos =  $('#footer').offset().top; 
   if(scroll+wH >= (footerPos+10)) {
@@ -95,7 +94,6 @@ function PageTopAnime() {
 }
 
 // ページトップボタン
-
 function PageTopAnime() {
   var scroll = $(window).scrollTop();
   var windowHeight = $(window).height();
@@ -160,33 +158,26 @@ $(document).ready(function() {
   // URLからクエリパラメータを取得
   const urlParams = new URLSearchParams(window.location.search);
   const tabParam = urlParams.get('id');
-
   // 初期タブを決める変数を宣言
   let initialTab = "tab1"; // デフォルトのタブ
   if (tabParam && $('#' + tabParam).length) {
     initialTab = tabParam;
   }
-
   // リロードしたときにスクロールを止める
   $(window).on('load', function () {
     if (tabParam) {
       $('body,html').stop().scrollTop(0);
     }
   });
-
   // コンテンツ非表示 & タブを非アクティブ
   $('.information-tab__item').removeClass("is-active");
   $('.information-tab__button').removeClass('is-active');
-
   // 何番目のタブかを格納
   const tabno = $('.information-tab__button#' + initialTab).index();
-
   // コンテンツ表示
   $('.information-tab__item').eq(tabno).addClass('is-active');
-
   // タブのアクティブ化
   $('.information-tab__button').eq(tabno).addClass('is-active');
-
   // // タブクリック時の処理
   // $('.js-tab').on('click', function() {
   //   $('.js-tab,.js-panel').removeClass('is-active');
@@ -208,13 +199,33 @@ $(".gallery__item img").click(function () {
 });
 // コース画像モーダル非表示イベント
 // モーダル画像背景 または 拡大画像そのものをクリックで発火
-$("#graydisplay").click(function () {
+$("#graydisplay").click(function () {                 
   // 非表示にする
   $("body").removeClass("no_scroll"); // 背景固定させるクラス削除
   $("#graydisplay").fadeOut(200);
   return false;
 });
 
+// トグル実装
+document.querySelectorAll('details').forEach((detail) => {
+  detail.addEventListener('toggle', (event) => {
+    if (detail.hasAttribute('open')) {
+      let summary = detail.querySelector('summary');
+      let content = detail.innerHTML;
+      detail.style.height = 'auto';
+      let height = detail.clientHeight + 'px';
+      detail.style.height = '0px';
+      setTimeout(() => {
+        detail.style.height = height;
+      }, 0);
+    } else {
+      detail.style.height = detail.clientHeight + 'px';
+      setTimeout(() => {
+        detail.style.height = '0px';
+      }, 0);
+    }
+  });
+});
 
 // // アコーディオン
 $(function () {

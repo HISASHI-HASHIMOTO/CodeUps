@@ -193,16 +193,16 @@
   border-right: 2px solid $red;
   content: "";
   display: block;
-  height: rem(10);
+  height: rem(19);
   left: 3%;
   position: absolute;
   top: 10%;
   transform: rotate(45deg);
-  width: rem(5);
+  width: rem(8);
   opacity: 0;
   @include mq(md) {
-    left: 3%;
-    top: 25%;
+    left: 2.5%;
+    top: -7%;
   }
 }
 
