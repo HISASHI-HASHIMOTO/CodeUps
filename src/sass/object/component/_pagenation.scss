@@ -43,7 +43,6 @@
  {
   background-color: $green;
   color: $white;
-  transition: 0.3s;
 } 
 
 .pagenation__link-pre {
@@ -66,7 +65,7 @@
 }
 
 .pagenation__link-pre:hover::before  {
-  background-color: $green;
+  background-color: transparent;
   border-top: 1px solid $white;
   border-right: 1px solid $white;
 }

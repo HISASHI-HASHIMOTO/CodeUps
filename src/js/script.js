@@ -207,25 +207,53 @@ $("#graydisplay").click(function () {
 });
 
 // トグル実装
-document.querySelectorAll('details').forEach((detail) => {
-  detail.addEventListener('toggle', (event) => {
-    if (detail.hasAttribute('open')) {
-      let summary = detail.querySelector('summary');
-      let content = detail.innerHTML;
-      detail.style.height = 'auto';
-      let height = detail.clientHeight + 'px';
-      detail.style.height = '0px';
-      setTimeout(() => {
-        detail.style.height = height;
-      }, 0);
+// document.addEventListener("DOMContentLoaded", () => {
+//   document.querySelectorAll(".archive__list").forEach(function (el) {
+//     const summary = el.querySelector(".archive__list-title");
+//     const content = el.querySelector(".archive__list-content");
+//     summary.addEventListener("click", (event) => {
+//       // デフォルトの挙動を無効化
+//       event.preventDefault();
+//       // open属性を判定
+//       if (el.getAttribute("open") !== null) {
+//         // アコーディオンを閉じるときの処理
+//         content.style.maxHeight = "0";
+//         content.style.opacity = "0";
+//         el.removeAttribute("open");
+//       } else {
+//         // open属性を付与
+//         el.setAttribute("open", "true");
+//         content.style.maxHeight = content.scrollHeight + "px";
+//         content.style.opacity = "1";
+//       }
+//     });
+//   });
+// });
+document.querySelectorAll('.archive__list').forEach(details => {
+  details.addEventListener('toggle', () => {
+    const items = details.querySelectorAll('.archive__list-item');
+    if (details.open) {
+      items.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add('show');
+        }, index * 100); // Delay each item to avoid abrupt change
+      });
     } else {
-      detail.style.height = detail.clientHeight + 'px';
-      setTimeout(() => {
-        detail.style.height = '0px';
-      }, 0);
+      items.forEach(item => {
+        item.classList.remove('show');
+      });
     }
   });
+  // Ensure items have correct initial state on page load
+  if (details.open) {
+    details.querySelectorAll('.archive__list-item').forEach(item => {
+      item.classList.add('show');
+    });
+  }
 });
+
+
+
 
 // // アコーディオン
 $(function () {
