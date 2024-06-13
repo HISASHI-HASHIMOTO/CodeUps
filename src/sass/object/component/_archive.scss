@@ -1,101 +1,53 @@
 @use "global" as *;
 
-// 前回のコード
-// .archive__list {
-//   color: $green;
-//   font-size: rem(24);
-//   transition: all 0.3s; 
-// }
-
-// .archive__list:first-of-type {
-//   margin-top: rem(24);
-// }
-
-// .archive__list-title {
-//   position: relative;
-//   cursor: pointer;
-//   display: list-item;
-//   transition: all 0.3s;
-// }
-
-// .archive__list-title::marker {
-//   display: block;
-//   font-size: 2rem;
-// }
-
-// .archive__list-item::before {
-//   content: "";
-//   background-image: url(../images/common/green-arrow.svg);
-//   display: inline-block;
-//   width: rem(24);
-//   height: rem(24);
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   margin-left: rem(32);
-//   // transition: all 0.3s;
-// }
-
-// .archive__list-item {
-//   display: flex;
-//   align-items: center;
-//   // transition: all 0.3s;
-// }
-
-
-// .archive__list-item {
-//   animation: fadeIn 0.5s linear;
-// }
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0; 
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-
-// chatGPTのコード
-.archive__list {
-  color: green;
-  font-size: rem(24); 
-  transition: all 0.3s; 
-}
-
-.archive__list:first-of-type {
-  margin-top: rem(24); 
+.archive {
+  cursor: pointer;
 }
 
 .archive__list-title {
+  color: $green;
+  font-size: rem(24);
+  padding-left: rem(37);
   position: relative;
-  cursor: pointer;
-  display: list-item;
-  transition: all 0.3s;
 }
 
-.archive__list-title::marker {
-  display: block;
-  font-size: rem(32);
-}
-
-.archive__list-item::before {
+.archive__list-title::before {
+  border-bottom: rem(11) solid transparent;
+  border-left: rem(17) solid $green;
+  border-top: rem(11) solid transparent;
+  bottom: 0;
   content: "";
-  background-image: url(../images/common/green-arrow.svg);
-  display: inline-block;
-  width: rem(24); 
-  height: rem(24); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: rem(32); 
-  transition: all 0.3s;
+  height: 0;
+  left: rem(10);
+  position: absolute;
+  top: rem(7);
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+  width: 0;
+}
+
+.archive__list-title.open::before {
+  transform: rotate(0deg);
+}
+
+.archive__list-items {
+  font-size: rem(24);
 }
 
 .archive__list-item {
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
+  padding-left: rem(27);
+  position: relative;
 }
 
-.archive__list-item.show {
-  opacity: 1;
+.archive__list-item::before {
+  border-bottom: rem(11) solid transparent;
+  border-left: rem(17) solid $green;
+  border-top: rem(11) solid transparent;
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: rem(5);
+  width: 0;
 }

@@ -207,52 +207,12 @@ $("#graydisplay").click(function () {
 });
 
 // トグル実装
-// document.addEventListener("DOMContentLoaded", () => {
-//   document.querySelectorAll(".archive__list").forEach(function (el) {
-//     const summary = el.querySelector(".archive__list-title");
-//     const content = el.querySelector(".archive__list-content");
-//     summary.addEventListener("click", (event) => {
-//       // デフォルトの挙動を無効化
-//       event.preventDefault();
-//       // open属性を判定
-//       if (el.getAttribute("open") !== null) {
-//         // アコーディオンを閉じるときの処理
-//         content.style.maxHeight = "0";
-//         content.style.opacity = "0";
-//         el.removeAttribute("open");
-//       } else {
-//         // open属性を付与
-//         el.setAttribute("open", "true");
-//         content.style.maxHeight = content.scrollHeight + "px";
-//         content.style.opacity = "1";
-//       }
-//     });
-//   });
-// });
-document.querySelectorAll('.archive__list').forEach(details => {
-  details.addEventListener('toggle', () => {
-    const items = details.querySelectorAll('.archive__list-item');
-    if (details.open) {
-      items.forEach((item, index) => {
-        setTimeout(() => {
-          item.classList.add('show');
-        }, index * 100); // Delay each item to avoid abrupt change
-      });
-    } else {
-      items.forEach(item => {
-        item.classList.remove('show');
-      });
-    }
+  // アーカイブアコーディオン
+  $(".archive__list-title.js-title").on("click", function () {
+    // クリックされた年に関連する月のリストを探し、スライドトグルで表示・非表示を切り替える
+    $(this).find(".js-items").slideToggle(200);
+    $(this).toggleClass("open");
   });
-  // Ensure items have correct initial state on page load
-  if (details.open) {
-    details.querySelectorAll('.archive__list-item').forEach(item => {
-      item.classList.add('show');
-    });
-  }
-});
-
-
 
 
 // // アコーディオン
@@ -264,6 +224,5 @@ $(function () {
     $(this).next().slideToggle(300);
   });
 });
-
 
 });

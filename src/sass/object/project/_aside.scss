@@ -1,5 +1,15 @@
 @use "global" as *;
 
+.aside__box {
+  max-width: calc(294/345 * 100%);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+   max-width: rem(294);
+   width: 100%;
+  }
+}
+
 .aside__cards-item {
   margin-top: rem(24);
 }
@@ -7,6 +17,7 @@
 .aside__box:not(:first-of-type) {
   margin-top: rem(83.2);
 }
+
 
 .aside__card-item {
   margin-top: rem(24);
@@ -56,6 +67,22 @@
 .aside__archive-text {
   margin-left: rem(11);
 }
+
+
+.aside__archive-list {
+  margin-top: rem(24);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .aside__archive-link.aside__archive-link--month {
   margin-left: rem(24);
